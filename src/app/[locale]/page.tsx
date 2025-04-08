@@ -20,9 +20,22 @@ export default async function Home({
   return (
     <main className="flex-1">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center bg-gray-900 text-white">
-        <div className="absolute inset-0 bg-black/70 z-10"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black z-10"></div>
+      <section className="relative h-[70vh] flex items-center justify-center text-white">
+        {/* Hero background image */}
+        <div className="absolute inset-0 z-0">
+          <Image 
+            src="/images/Torpedo2000HeroHome.webp"
+            alt="Torpedo 2000 Carrozzeria"
+            fill
+            priority
+            style={{objectFit: 'cover'}}
+            quality={90}
+          />
+        </div>
+        {/* Overlay per migliorare la leggibilità del testo */}
+        <div className="absolute inset-0 bg-black/40 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 z-10"></div>
+        
         <div className="container mx-auto px-4 z-20 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">{messages.hero.title}</h1>
           <p className="text-xl md:text-2xl mb-8 drop-shadow-lg">{messages.hero.subtitle}</p>
@@ -96,9 +109,13 @@ export default async function Home({
               </p>
             </div>
             <div className="flex-1 flex justify-center">
-              {/* Placeholder for an about image */}
-              <div className="w-full max-w-md h-64 bg-gray-300 rounded-lg flex items-center justify-center shadow-md">
-                <span className="text-gray-700 font-medium">Immagine</span>
+              <div className="w-full max-w-md h-64 bg-gray-300 rounded-lg relative shadow-md overflow-hidden">
+                <Image 
+                  src="/images/about-placeholder.jpg"
+                  alt="Torpedo 2000 Carrozzeria"
+                  fill
+                  style={{objectFit: 'cover'}}
+                />
               </div>
             </div>
           </div>
