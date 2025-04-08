@@ -5,16 +5,19 @@ import de from '@/messages/de/common.json';
 import fr from '@/messages/fr/common.json';
 import rm from '@/messages/rm/common.json';
 
-// Usa any per i tipi per evitare problemi di compatibilità
-const dictionaries: Record<string, () => Promise<any>> = {
+// Define a Dictionary type for better type safety
+export type Dictionary = typeof it;
+
+// Use the Dictionary type instead of any
+const dictionaries: Record<string, () => Promise<Dictionary>> = {
   it: () => Promise.resolve(it),
   de: () => Promise.resolve(de),
   fr: () => Promise.resolve(fr),
   rm: () => Promise.resolve(rm),
 };
 
-// Esporta la funzione getDictionary che restituisce le traduzioni
-export const getDictionary = async (locale: string): Promise<any> => {
+// Export the getDictionary function with proper typing
+export const getDictionary = async (locale: string): Promise<Dictionary> => {
   try {
     return dictionaries[locale as keyof typeof dictionaries]
       ? await dictionaries[locale as keyof typeof dictionaries]()

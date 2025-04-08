@@ -11,42 +11,42 @@ const partners = [
   {
     id: 1,
     name: 'Assicurazione XYZ',
-    logo: '/placeholder-logo.svg',
+    logo: '/images/partner-placeholder.png',
     description: 'Compagnia assicurativa leader nel settore auto',
     website: 'https://example.com'
   },
   {
     id: 2,
     name: 'Auto Parts Swiss',
-    logo: '/placeholder-logo.svg',
+    logo: '/images/partner-placeholder.png',
     description: 'Fornitore di parti originali e certificate',
     website: 'https://example.com'
   },
   {
     id: 3,
     name: 'Vernici Premium',
-    logo: '/placeholder-logo.svg',
+    logo: '/images/partner-placeholder.png',
     description: 'Produttore di vernici di alta qualità per auto',
     website: 'https://example.com'
   },
   {
     id: 4,
     name: 'AutoGlass Pro',
-    logo: '/placeholder-logo.svg',
+    logo: '/images/partner-placeholder.png',
     description: 'Specialisti nella riparazione e sostituzione di vetri auto',
     website: 'https://example.com'
   },
   {
     id: 5,
     name: 'Carrosserie Swiss',
-    logo: '/placeholder-logo.svg',
+    logo: '/images/partner-placeholder.png',
     description: 'Associazione svizzera dei carrozzieri',
     website: 'https://example.com'
   },
   {
     id: 6,
     name: 'Auto Leasing Ticino',
-    logo: '/placeholder-logo.svg',
+    logo: '/images/partner-placeholder.png',
     description: 'Servizi di leasing e finanziamento auto',
     website: 'https://example.com'
   },
@@ -83,9 +83,14 @@ export default async function PartnersPage({
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {partners.map((partner) => (
               <div key={partner.id} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col items-center">
-                <div className="w-40 h-40 bg-gray-100 rounded-full mb-6 flex items-center justify-center p-4">
-                  {/* Placeholder per i loghi in attesa delle immagini reali */}
-                  <div className="text-center text-gray-400">Logo {partner.name}</div>
+                <div className="w-40 h-40 bg-gray-100 rounded-full mb-6 flex items-center justify-center p-4 relative overflow-hidden">
+                  <Image
+                    src={partner.logo}
+                    alt={`Logo ${partner.name}`}
+                    width={120}
+                    height={120}
+                    className="object-contain"
+                  />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{partner.name}</h3>
                 <p className="text-gray-600 text-center mb-4">{partner.description}</p>

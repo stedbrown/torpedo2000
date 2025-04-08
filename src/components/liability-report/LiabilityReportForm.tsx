@@ -2,9 +2,10 @@
 
 import React, { useState } from 'react';
 import { FaUpload } from 'react-icons/fa';
+import { Dictionary } from '@/lib/dictionaries';
 
 type LiabilityReportFormProps = {
-  messages: any;
+  messages: Dictionary;
   locale: string;
 };
 
@@ -13,32 +14,15 @@ interface FormData {
   lastName: string;
   email: string;
   phone: string;
+  insurance: string;
+  policyNumber: string;
   address: string;
   zipCity: string;
-  birthDate: string;
-  
-  // Assicurazione
-  insuranceCompany: string;
-  policyNumber: string;
-  
-  // Parte lesa
-  thirdPartyName: string;
-  thirdPartyAddress: string;
-  thirdPartyZipCity: string;
-  thirdPartyPhone: string;
-  thirdPartyEmail: string;
-  
-  // Veicolo parte lesa
-  thirdPartyPlate: string;
-  thirdPartyVehicleMake: string;
-  thirdPartyVehicleModel: string;
-  
-  // Informazioni evento
-  accidentDate: string;
-  accidentLocation: string;
-  accidentDescription: string;
-  policeReport: string;
-  
+  incidentDate: string;
+  incidentLocation: string;
+  otherParty: string;
+  otherPartyContact: string;
+  damageDescription: string;
   files: File[];
   consent: boolean;
 }
@@ -49,28 +33,15 @@ export default function LiabilityReportForm({ messages, locale }: LiabilityRepor
     lastName: '',
     email: '',
     phone: '',
+    insurance: '',
+    policyNumber: '',
     address: '',
     zipCity: '',
-    birthDate: '',
-    
-    insuranceCompany: '',
-    policyNumber: '',
-    
-    thirdPartyName: '',
-    thirdPartyAddress: '',
-    thirdPartyZipCity: '',
-    thirdPartyPhone: '',
-    thirdPartyEmail: '',
-    
-    thirdPartyPlate: '',
-    thirdPartyVehicleMake: '',
-    thirdPartyVehicleModel: '',
-    
-    accidentDate: '',
-    accidentLocation: '',
-    accidentDescription: '',
-    policeReport: '',
-    
+    incidentDate: '',
+    incidentLocation: '',
+    otherParty: '',
+    otherPartyContact: '',
+    damageDescription: '',
     files: [],
     consent: false
   });
@@ -79,7 +50,7 @@ export default function LiabilityReportForm({ messages, locale }: LiabilityRepor
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState(false);
   
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { id, value } = e.target;
     setFormData({ ...formData, [id]: value });
   };
@@ -100,44 +71,31 @@ export default function LiabilityReportForm({ messages, locale }: LiabilityRepor
     setSubmitting(true);
     
     try {
-      // Qui inserire la logica di invio del form
-      // Per ora simuliamo un invio con successo dopo 1 secondo
+      // Simuliamo un invio con successo dopo 1 secondo
       await new Promise(resolve => setTimeout(resolve, 1000));
       
       setSubmitSuccess(true);
       setSubmitting(false);
-      // Resetta il form
+      // Reset del form
       setFormData({
         firstName: '',
         lastName: '',
         email: '',
         phone: '',
+        insurance: '',
+        policyNumber: '',
         address: '',
         zipCity: '',
-        birthDate: '',
-        
-        insuranceCompany: '',
-        policyNumber: '',
-        
-        thirdPartyName: '',
-        thirdPartyAddress: '',
-        thirdPartyZipCity: '',
-        thirdPartyPhone: '',
-        thirdPartyEmail: '',
-        
-        thirdPartyPlate: '',
-        thirdPartyVehicleMake: '',
-        thirdPartyVehicleModel: '',
-        
-        accidentDate: '',
-        accidentLocation: '',
-        accidentDescription: '',
-        policeReport: '',
-        
+        incidentDate: '',
+        incidentLocation: '',
+        otherParty: '',
+        otherPartyContact: '',
+        damageDescription: '',
         files: [],
         consent: false
       });
-    } catch (error) {
+    } catch (submitError) {
+      console.error(`Error submitting form (${locale}):`, submitError);
       setSubmitError(true);
       setSubmitting(false);
     }
@@ -150,8 +108,12 @@ export default function LiabilityReportForm({ messages, locale }: LiabilityRepor
         <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-green-500 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
         </svg>
-        <h3 className="text-lg font-medium text-green-800 mb-2">{messages.contact?.form?.success?.title || "Grazie per averci contattato!"}</h3>
-        <p className="text-green-700">{messages.contact?.form?.success?.message || "Ti risponderemo il prima possibile."}</p>
+        <h3 className="text-lg font-medium text-green-800 mb-2">
+          {"Grazie per averci contattato!"}
+        </h3>
+        <p className="text-green-700">
+          {"La tua segnalazione di danno è stata inviata. Ti risponderemo il prima possibile."}
+        </p>
       </div>
     );
   }
@@ -255,13 +217,13 @@ export default function LiabilityReportForm({ messages, locale }: LiabilityRepor
         </div>
         
         <div>
-          <label className="block text-gray-700 font-medium mb-2" htmlFor="birthDate">
-            {messages.liabilityReport.form.fields.birthDate || "Data di nascita"}*
+          <label className="block text-gray-700 font-medium mb-2" htmlFor="incidentDate">
+            {messages.liabilityReport.form.fields.incidentDate || "Data dell'incidente"}*
           </label>
           <input 
             type="date" 
-            id="birthDate" 
-            value={formData.birthDate}
+            id="incidentDate" 
+            value={formData.incidentDate}
             onChange={handleInputChange}
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
             required
@@ -273,13 +235,13 @@ export default function LiabilityReportForm({ messages, locale }: LiabilityRepor
         <h3 className="text-lg font-medium text-gray-800">{messages.liabilityReport.insuranceInfo || "Informazioni sull'assicurazione"}</h3>
         
         <div>
-          <label className="block text-gray-700 font-medium mb-2" htmlFor="insuranceCompany">
-            {messages.liabilityReport.form.fields.insuranceCompany || "Compagnia di assicurazione"}*
+          <label className="block text-gray-700 font-medium mb-2" htmlFor="insurance">
+            {messages.liabilityReport.form.fields.insurance || "Compagnia di assicurazione"}*
           </label>
           <input 
             type="text" 
-            id="insuranceCompany" 
-            value={formData.insuranceCompany}
+            id="insurance" 
+            value={formData.insurance}
             onChange={handleInputChange}
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
             required
@@ -305,13 +267,13 @@ export default function LiabilityReportForm({ messages, locale }: LiabilityRepor
         <h3 className="text-lg font-medium text-gray-800">{messages.liabilityReport.thirdPartyInfo || "Informazioni della parte lesa"}</h3>
         
         <div>
-          <label className="block text-gray-700 font-medium mb-2" htmlFor="thirdPartyName">
-            {messages.liabilityReport.form.fields.thirdPartyName || "Nome e cognome"}*
+          <label className="block text-gray-700 font-medium mb-2" htmlFor="otherParty">
+            {messages.liabilityReport.form.fields.otherParty || "Nome e cognome"}*
           </label>
           <input 
             type="text" 
-            id="thirdPartyName" 
-            value={formData.thirdPartyName}
+            id="otherParty" 
+            value={formData.otherParty}
             onChange={handleInputChange}
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
             required
@@ -320,13 +282,13 @@ export default function LiabilityReportForm({ messages, locale }: LiabilityRepor
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label className="block text-gray-700 font-medium mb-2" htmlFor="thirdPartyAddress">
-              {messages.liabilityReport.form.fields.thirdPartyAddress || "Indirizzo"}*
+            <label className="block text-gray-700 font-medium mb-2" htmlFor="otherPartyContact">
+              {messages.liabilityReport.form.fields.otherPartyContact || "Contatto"}*
             </label>
             <input 
               type="text" 
-              id="thirdPartyAddress" 
-              value={formData.thirdPartyAddress}
+              id="otherPartyContact" 
+              value={formData.otherPartyContact}
               onChange={handleInputChange}
               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
               required
@@ -334,153 +296,18 @@ export default function LiabilityReportForm({ messages, locale }: LiabilityRepor
           </div>
           
           <div>
-            <label className="block text-gray-700 font-medium mb-2" htmlFor="thirdPartyZipCity">
-              {messages.liabilityReport.form.fields.thirdPartyZipCity || "CAP / Località"}*
+            <label className="block text-gray-700 font-medium mb-2" htmlFor="damageDescription">
+              {messages.liabilityReport.form.fields.damageDescription || "Descrizione del danno"}*
             </label>
-            <input 
-              type="text" 
-              id="thirdPartyZipCity" 
-              value={formData.thirdPartyZipCity}
+            <textarea 
+              id="damageDescription" 
+              value={formData.damageDescription}
               onChange={handleInputChange}
+              rows={4}
               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
               required
-            />
+            ></textarea>
           </div>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div>
-            <label className="block text-gray-700 font-medium mb-2" htmlFor="thirdPartyPhone">
-              {messages.liabilityReport.form.fields.thirdPartyPhone || "Telefono"}
-            </label>
-            <input 
-              type="tel" 
-              id="thirdPartyPhone" 
-              value={formData.thirdPartyPhone}
-              onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-            />
-          </div>
-          
-          <div>
-            <label className="block text-gray-700 font-medium mb-2" htmlFor="thirdPartyEmail">
-              {messages.liabilityReport.form.fields.thirdPartyEmail || "Email"}
-            </label>
-            <input 
-              type="email" 
-              id="thirdPartyEmail" 
-              value={formData.thirdPartyEmail}
-              onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-            />
-          </div>
-        </div>
-      </div>
-      
-      <div className="space-y-4 pt-4">
-        <h3 className="text-lg font-medium text-gray-800">{messages.liabilityReport.thirdPartyVehicle || "Veicolo della parte lesa"}</h3>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div>
-            <label className="block text-gray-700 font-medium mb-2" htmlFor="thirdPartyPlate">
-              {messages.liabilityReport.form.fields.thirdPartyPlate || "Targa"}*
-            </label>
-            <input 
-              type="text" 
-              id="thirdPartyPlate" 
-              value={formData.thirdPartyPlate}
-              onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-              required
-            />
-          </div>
-          
-          <div>
-            <label className="block text-gray-700 font-medium mb-2" htmlFor="thirdPartyVehicleMake">
-              {messages.liabilityReport.form.fields.thirdPartyVehicleMake || "Marca"}*
-            </label>
-            <input 
-              type="text" 
-              id="thirdPartyVehicleMake" 
-              value={formData.thirdPartyVehicleMake}
-              onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-              required
-            />
-          </div>
-          
-          <div>
-            <label className="block text-gray-700 font-medium mb-2" htmlFor="thirdPartyVehicleModel">
-              {messages.liabilityReport.form.fields.thirdPartyVehicleModel || "Modello"}*
-            </label>
-            <input 
-              type="text" 
-              id="thirdPartyVehicleModel" 
-              value={formData.thirdPartyVehicleModel}
-              onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-              required
-            />
-          </div>
-        </div>
-      </div>
-      
-      <div className="space-y-4 pt-4">
-        <h3 className="text-lg font-medium text-gray-800">{messages.liabilityReport.accidentDetails || "Dettagli dell'incidente"}</h3>
-        
-        <div>
-          <label className="block text-gray-700 font-medium mb-2" htmlFor="accidentDate">
-            {messages.liabilityReport.form.fields.accidentDate || "Data dell'incidente"}*
-          </label>
-          <input 
-            type="date" 
-            id="accidentDate" 
-            value={formData.accidentDate}
-            onChange={handleInputChange}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-            required
-          />
-        </div>
-        
-        <div>
-          <label className="block text-gray-700 font-medium mb-2" htmlFor="accidentLocation">
-            {messages.liabilityReport.form.fields.accidentLocation || "Luogo dell'incidente"}*
-          </label>
-          <input 
-            type="text" 
-            id="accidentLocation" 
-            value={formData.accidentLocation}
-            onChange={handleInputChange}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-            required
-          />
-        </div>
-        
-        <div>
-          <label className="block text-gray-700 font-medium mb-2" htmlFor="accidentDescription">
-            {messages.liabilityReport.form.fields.accidentDescription || "Descrizione dell'incidente"}*
-          </label>
-          <textarea 
-            id="accidentDescription" 
-            value={formData.accidentDescription}
-            onChange={handleInputChange}
-            rows={4}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-            required
-          ></textarea>
-        </div>
-        
-        <div>
-          <label className="block text-gray-700 font-medium mb-2" htmlFor="policeReport">
-            {messages.liabilityReport.form.fields.policeReport || "Rapporto di polizia (se disponibile)"}
-          </label>
-          <input 
-            type="text" 
-            id="policeReport" 
-            value={formData.policeReport}
-            onChange={handleInputChange}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
-          />
         </div>
       </div>
       

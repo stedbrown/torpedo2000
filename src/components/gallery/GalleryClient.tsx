@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from 'react';
-import { FaFilter } from 'react-icons/fa';
 import { Dictionary } from '@/lib/dictionaries';
 
 interface GalleryClientProps {
@@ -50,6 +49,7 @@ export default function GalleryClient({ messages, locale }: GalleryClientProps) 
               : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
           }`}
           onClick={() => setActiveFilter('all')}
+          aria-label={`${messages.gallery.categories.all} - ${locale}`}
         >
           {messages.gallery.categories.all}
         </button>
@@ -61,6 +61,7 @@ export default function GalleryClient({ messages, locale }: GalleryClientProps) 
               : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
           }`}
           onClick={() => setActiveFilter('repairs')}
+          aria-label={`${messages.gallery.categories.repairs} - ${locale}`}
         >
           {messages.gallery.categories.repairs}
         </button>
@@ -72,6 +73,7 @@ export default function GalleryClient({ messages, locale }: GalleryClientProps) 
               : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
           }`}
           onClick={() => setActiveFilter('restorations')}
+          aria-label={`${messages.gallery.categories.restorations} - ${locale}`}
         >
           {messages.gallery.categories.restorations}
         </button>
@@ -83,6 +85,7 @@ export default function GalleryClient({ messages, locale }: GalleryClientProps) 
               : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
           }`}
           onClick={() => setActiveFilter('paintwork')}
+          aria-label={`${messages.gallery.categories.paintwork} - ${locale}`}
         >
           {messages.gallery.categories.paintwork}
         </button>
@@ -97,6 +100,7 @@ export default function GalleryClient({ messages, locale }: GalleryClientProps) 
               <div 
                 className="w-full h-full bg-cover bg-center" 
                 style={{ backgroundImage: `url('${item.image}')` }}
+                aria-label={`${item.title} - ${locale}`}
               />
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">

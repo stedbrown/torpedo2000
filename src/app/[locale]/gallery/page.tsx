@@ -108,8 +108,7 @@ export default async function GalleryPage({
         <div className="container mx-auto px-4">
           <GalleryClient 
             messages={messages} 
-            locale={locale} 
-            galleryImages={galleryImages}
+            locale={locale}
           />
         </div>
       </section>

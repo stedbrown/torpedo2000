@@ -3,9 +3,10 @@
 import React, { useState } from 'react';
 import DamageReportForm from './DamageReportForm';
 import LiabilityReportForm from '@/components/liability-report/LiabilityReportForm';
+import { Dictionary } from '@/lib/dictionaries';
 
 type ReportSelectorProps = {
-  messages: any;
+  messages: Dictionary;
   locale: string;
 };
 

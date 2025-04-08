@@ -2,9 +2,10 @@
 
 import React, { useState } from 'react';
 import { FaUpload } from 'react-icons/fa';
+import { Dictionary } from '@/lib/dictionaries';
 
 type DamageReportFormProps = {
-  messages: any;
+  messages: Dictionary;
   locale: string;
 };
 
@@ -103,7 +104,8 @@ export default function DamageReportForm({ messages, locale }: DamageReportFormP
         files: [],
         consent: false
       });
-    } catch (error) {
+    } catch (submitError) {
+      console.error(`Error submitting form (${locale}):`, submitError);
       setSubmitError(true);
       setSubmitting(false);
     }
@@ -116,8 +118,12 @@ export default function DamageReportForm({ messages, locale }: DamageReportFormP
         <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-green-500 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
         </svg>
-        <h3 className="text-lg font-medium text-green-800 mb-2">{messages.contact?.form?.success?.title || "Grazie per averci contattato!"}</h3>
-        <p className="text-green-700">{messages.contact?.form?.success?.message || "Ti risponderemo il prima possibile."}</p>
+        <h3 className="text-lg font-medium text-green-800 mb-2">
+          {"Grazie per averci contattato!"}
+        </h3>
+        <p className="text-green-700">
+          {"Ti risponderemo il prima possibile."}
+        </p>
       </div>
     );
   }
@@ -129,7 +135,7 @@ export default function DamageReportForm({ messages, locale }: DamageReportFormP
       </h2>
       
       <div className="space-y-4">
-        <h3 className="text-lg font-medium text-gray-800">{messages.damageReport.insuredData || "Dati dell'assicurato"}</h3>
+        <h3 className="text-lg font-medium text-gray-800">{"Dati dell'assicurato"}</h3>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
@@ -288,7 +294,7 @@ export default function DamageReportForm({ messages, locale }: DamageReportFormP
       </div>
       
       <div className="space-y-4 pt-4">
-        <h3 className="text-lg font-medium text-gray-800">{messages.damageReport.accidentInfo || "Informazioni sull'evento"}</h3>
+        <h3 className="text-lg font-medium text-gray-800">{"Informazioni sull'evento"}</h3>
         
         <div>
           <label className="block text-gray-700 font-medium mb-2" htmlFor="accidentDate">

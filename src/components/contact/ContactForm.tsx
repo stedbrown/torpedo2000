@@ -3,10 +3,11 @@
 import React from 'react';
 import { useState } from 'react';
 import { FaPhone, FaEnvelope, FaClock, FaUpload } from 'react-icons/fa';
+import { Dictionary } from '@/lib/dictionaries';
 
 interface ContactFormProps {
   locale: string;
-  messages: any;
+  messages: Dictionary;
 }
 
 export default function ContactForm({ locale, messages }: ContactFormProps) {
@@ -63,7 +64,8 @@ export default function ContactForm({ locale, messages }: ContactFormProps) {
         consent: false,
         file: null
       }));
-    } catch (error) {
+    } catch (submitError) {
+      console.error('Form submission error:', submitError);
       setFormState(prev => ({ ...prev, isSubmitting: false, error: true }));
     }
   };
@@ -91,7 +93,7 @@ export default function ContactForm({ locale, messages }: ContactFormProps) {
             <div>
               <p className="font-semibold text-gray-900 mb-1">{messages.findUs.email}</p>
               <p className="text-gray-700">
-                <a href="mailto:info@torpedo2000.ch" className="hover:text-red-600 transition-colors">info@torpedo2000.ch</a>
+                <a href={`mailto:info@torpedo2000.ch?subject=Contact from ${locale} website`} className="hover:text-red-600 transition-colors">info@torpedo2000.ch</a>
               </p>
             </div>
           </div>
