@@ -1,7 +1,6 @@
 import React from 'react';
 import { getDictionary } from '@/lib/dictionaries';
 import { locales } from '@/middleware';
-import { FaCarCrash, FaClipboardList, FaFileUpload } from 'react-icons/fa';
 import ReportSelector from '@/components/damage-report/ReportSelector';
 
 export async function generateStaticParams() {
