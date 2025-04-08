@@ -122,6 +122,53 @@ export default async function Home({
         </div>
       </section>
 
+      {/* Certification Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Eccellenza nella formazione</h2>
+              <div className="w-20 h-1 bg-red-600 mx-auto mb-6"></div>
+              <p className="text-xl text-gray-700">
+                Con orgoglio, siamo un'azienda formatrice ufficialmente riconosciuta e membro attivo dell'Unione Svizzera dei Carrozzieri, impegnata nell'eccellenza professionale e nella formazione delle future generazioni di artigiani.
+              </p>
+            </div>
+            
+            <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16">
+              <div className="group bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center w-full max-w-xs">
+                <div className="relative w-48 h-32 mb-4">
+                  <Image 
+                    src="/images/carrosserieSuisseLogo.webp"
+                    alt="Unione Svizzera dei Carrozzieri"
+                    fill
+                    style={{objectFit: 'contain'}}
+                  />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">Unione Svizzera dei Carrozzieri</h3>
+                <p className="text-gray-600 text-center text-sm">
+                  Membro ufficiale dell'associazione che garantisce standard qualitativi elevati nel settore della carrozzeria.
+                </p>
+              </div>
+              
+              <div className="group bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center w-full max-w-xs">
+                <div className="relative w-48 h-32 mb-4">
+                  <Image 
+                    src="/images/logoApprendisti.webp"
+                    alt="Azienda Formatrice Certificata"
+                    fill
+                    style={{objectFit: 'contain'}}
+                  />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">Azienda Formatrice Certificata</h3>
+                <p className="text-gray-600 text-center text-sm">
+                  Investiamo nel futuro formando giovani talenti con competenze tecniche all'avanguardia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact CTA */}
       <section className="py-12 bg-red-600 text-white">
         <div className="container mx-auto px-4 text-center">
