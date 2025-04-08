@@ -1,0 +1,204 @@
+{
+  "navigation": {
+    "home": "Pagina principala",
+    "about": "Davart nus",
+    "services": "Servetschs",
+    "gallery": "Gallaria",
+    "contact": "Contact",
+    "findUs": "Nua ans chattar",
+    "partners": "Partners",
+    "damageReport": "Annunzia da donn",
+    "liabilityReport": "Annunzia donn RC"
+  },
+  "hero": {
+    "title": "Carrozzeria Torpedo 2000 SA",
+    "subtitle": "50 onns experientscha a Voss servetsch",
+    "cta": "Contactai nus"
+  },
+  "services": {
+    "title": "Noss servetschs",
+    "subtitle": "Nus porschain ina paletta cumpletta da servetschs per la tgira, mantegniment e reparatura da Voss vehichel",
+    "repairs": {
+      "title": "Reparaturas e coluraziuns",
+      "description": "Nus reparain e colurischian autos e vehichels grevs cun la maxima premura."
+    },
+    "hail": {
+      "title": "Donns da tempesta",
+      "description": "Nus reparain donns da tempesta e pitschnas blegnas cun metoda alternativa."
+    },
+    "restoration": {
+      "title": "Restauraziuns",
+      "description": "Nus purschin servetschs da restauraziun da tut gener per vehichels vegls e classics."
+    },
+    "corrosion": {
+      "title": "Tractaments anti-corrusivs",
+      "description": "Nus exequin tractaments anti-corrusivs per proteger Voss vehichel."
+    },
+    "glass": {
+      "title": "Substituziun da vaiders",
+      "description": "Nus substitueschan paravent e vaiders da tut gener per autos e vehichels grevs."
+    },
+    "insurance": {
+      "title": "Cussegliaziun d'assicuranza",
+      "description": "Nus purschin cussegliaziun per praticas d'assicuranza en Svizra ed a l'exteriur."
+    },
+    "courtesy": {
+      "title": "Vehichels da cortesia",
+      "description": "Nus furnin vehichels da cortesia durant il temp da reparatura."
+    },
+    "whyChooseUs": {
+      "title": "Pertge tscherner nus",
+      "experience": {
+        "title": "50 onns experientscha",
+        "description": "Cun in mez tschientaner d'experientscha, garantin nus in servetsch da qualitad superiura e professiunalitad."
+      },
+      "certified": {
+        "title": "Tecnicians certificads",
+        "description": "Noss team da tecnicians qualifitgads garantescha reparaturas exequidas tenor ils standards ils pli auts dal sectur."
+      },
+      "quality": {
+        "title": "Qualitad garantida",
+        "description": "Nus duvrain be products e parts da reserva da auta qualitad per garantir resultats durabel e fidaivels."
+      },
+      "support": {
+        "title": "Assistenza cumpletta",
+        "description": "Nus porschain in sustegn cumplet da la valitaziun iniziala fin a la consegna dal vehichel reparà."
+      }
+    }
+  },
+  "about": {
+    "title": "Davart nus",
+    "text1": "Cun 50 onns experientscha, la Carrozzeria Torpedo 2000 SA represchenta in punct da referenza per la reparatura e la restauraziun da vehichels en il chantun Tessin.",
+    "text2": "Nus essan ina interpresa formatriza commembra da l'Uniun Svizra dals Carrozziers, ingaschada en la qualitad e la professiunalitad en mintga lavur.",
+    "text3": "Per noss clients, nus furnin er vehichels da cortesia durant il temp da reparatura."
+  },
+  "cta": {
+    "title": "Dumandai in preventiv gratuit",
+    "text": "Contactai nus gia oz per ina cussegliaziun senza obligaziun",
+    "button": "Contactai nus"
+  },
+  "findUs": {
+    "title": "Nua ans chattar",
+    "subtitle": "Nossa posiziun en il chantun Tessin",
+    "address": "Via Bellinzona 26, 6743 Bodio, Tessin, Svizra",
+    "hours": "Uras d'avertura",
+    "weekdays": "Glindesdi - Venderdi: 07:30 - 12:00, 13:30 - 17:30",
+    "saturday": "Sonda: Be cun termin",
+    "sunday": "Dumengia: Serrà",
+    "directions": "Indicaziuns da via",
+    "phone": "Telefon",
+    "email": "E-mail"
+  },
+  "contact": {
+    "title": "Contactai nus",
+    "subtitle": "Nus essan qua per gidar",
+    "description": "Empleni il formular sutvart per ans trametter ina dumonda u per dumandar in preventiv. Nus As responderain uschè svelt sco pussaivel.",
+    "alwaysReachable": "Nus essan adina cuntanschibels:",
+    "officeHours": "Uras da biro",
+    "weekdays": "Glindesdi - Venderdi: 07:30 - 12:00, 13:30 - 17:30",
+    "weekend": "Sonda - Dumengia: Serrà",
+    "followUs": "Suandai nus sin Instagram",
+    "instagramDescription": "Scuvri nossas ultimas lavurs e novitads cun ans suandar sin Instagram",
+    "form": {
+      "title": "Formular da contact",
+      "firstName": "Prenum",
+      "lastName": "Num",
+      "phone": "Telefon",
+      "email": "E-mail",
+      "subject": "Object",
+      "message": "Messadi",
+      "attachFile": "Chargiar si datoteca",
+      "browse": "Tschertgar",
+      "consentLabel": "Jau sun perina da retschaiver e-mails davart Voss products, offertas spezialas e novitads.",
+      "submit": "Trametter messadi",
+      "success": "Grazia per avair contactà nus! Nus As responderain uschè svelt sco pussaivel.",
+      "error": "Igl è capità in sbagl cun trametter il messadi. Empruvai pli tard u contactai nus directamain."
+    }
+  },
+  "partners": {
+    "title": "Noss partners",
+    "subtitle": "Nus collavurain cun las meglras interpresas dal sectur",
+    "description": "La Carrozzeria Torpedo 2000 SA collavura cun ils megliers partners dal sectur d'automobilistica e d'assicuranzas per garantir a noss clients servetschs da qualitad e soluziuns effizientas.",
+    "becomePartner": "Daventai noss partner",
+    "contactUs": "Contactai nus per collavurar"
+  },
+  "gallery": {
+    "title": "Gallaria",
+    "subtitle": "Noss lavurs",
+    "categories": {
+      "all": "Tut",
+      "repairs": "Reparaturas",
+      "restorations": "Restauraziuns",
+      "paintwork": "Coluraziun"
+    }
+  },
+  "damageReport": {
+    "title": "Annunzia da donn",
+    "subtitle": "Annunziai in donn a Voss vehichel",
+    "steps": {
+      "accident": {
+        "title": "Vus avais subì in donn",
+        "description": "Voss vehichel ha subì in donn e dovra ina reparatura"
+      },
+      "report": {
+        "title": "Emplenì il formulari",
+        "description": "Inserì ils detagls dal donn e las infurmaziuns dumandadas"
+      },
+      "submit": {
+        "title": "Tramettai la dumonda",
+        "description": "Nus As contactain uschè svelt sco pussaivel per fixar in termin"
+      }
+    },
+    "form": {
+      "title": "Formulari d'annunzia",
+      "fields": {
+        "firstName": "Prenum",
+        "lastName": "Num",
+        "email": "E-mail",
+        "phone": "Telefon",
+        "vehicleInfo": "Infurmaziuns dal vehichel",
+        "make": "Marca",
+        "model": "Model",
+        "plate": "Placa",
+        "accidentDate": "Data dal donn",
+        "damageDescription": "Descripziun dal donn",
+        "photos": "Fotos dal donn",
+        "uploadPhotos": "Chargiar si fotos",
+        "dragPhotos": "u trair qua",
+        "photoFormats": "PNG, JPG, GIF fin 10MB",
+        "privacyConsent": "Jau dun mia consentiment per l'elavuraziun da mias datas persunalas tenor la politica da protecziun da datas"
+      },
+      "submit": "Trametter annunzia"
+    }
+  },
+  "liabilityReport": {
+    "title": "Annunzia donn RC",
+    "subtitle": "Annunziai in donn da responsabilitad civila",
+    "form": {
+      "personalInfo": "Infurmaziuns persunalas",
+      "name": "Num e prenum",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "address": "Adressa",
+      "insuranceInfo": "Infurmaziuns d'assicuranza",
+      "company": "Firma d'assicuranza",
+      "policyNumber": "Numer da polissa",
+      "incidentInfo": "Infurmaziuns davart l'incident",
+      "date": "Data da l'incident",
+      "location": "Lieu da l'incident",
+      "description": "Descripziun da l'incident",
+      "involvedParties": "Parts pertutgadas",
+      "photos": "Fotos (opziunal)",
+      "upload": "Chargiar si fotos",
+      "submit": "Trametter annunzia",
+      "success": "Vossa annunzia è vegnida tramessa cun success! Nus As contactain prest.",
+      "error": "Igl è capità in sbagl cun trametter l'annunzia. Empruvai pli tard u contactai nus directamain."
+    }
+  },
+  "footer": {
+    "contacts": "Contacts",
+    "quickLinks": "Links sperts",
+    "servicesTitle": "Servetschs",
+    "copyright": "© {year} Carrozzeria Torpedo 2000 SA. Tut ils dretgs reservads."
+  }
+} 

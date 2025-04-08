@@ -1,0 +1,204 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "Über uns",
+    "services": "Dienstleistungen",
+    "gallery": "Galerie",
+    "contact": "Kontakt",
+    "findUs": "Wo Sie uns finden",
+    "partners": "Partner",
+    "damageReport": "Schadensmeldung",
+    "liabilityReport": "Haftpflichtschadenmeldung"
+  },
+  "hero": {
+    "title": "Carrozzeria Torpedo 2000 SA",
+    "subtitle": "50 Jahre Erfahrung zu Ihren Diensten",
+    "cta": "Kontaktieren Sie uns"
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "subtitle": "Wir bieten eine komplette Palette von Dienstleistungen für die Pflege, Wartung und Reparatur Ihres Fahrzeugs",
+    "repairs": {
+      "title": "Reparaturen und Lackierungen",
+      "description": "Wir reparieren und lackieren Autos und Nutzfahrzeuge mit größter Sorgfalt."
+    },
+    "hail": {
+      "title": "Hagelschäden",
+      "description": "Wir reparieren Hagelschäden und kleine Dellen mit alternativen Methoden."
+    },
+    "restoration": {
+      "title": "Restaurierungen",
+      "description": "Wir bieten Restaurierungsdienstleistungen für Old- und Youngtimer an."
+    },
+    "corrosion": {
+      "title": "Korrosionsschutzbehandlungen",
+      "description": "Wir führen Korrosionsschutzbehandlungen durch, um Ihr Fahrzeug zu schützen."
+    },
+    "glass": {
+      "title": "Glasaustausch",
+      "description": "Wir ersetzen Windschutzscheiben und alle Arten von Glas für Autos und Nutzfahrzeuge."
+    },
+    "insurance": {
+      "title": "Versicherungsberatung",
+      "description": "Wir bieten Beratung für Versicherungsangelegenheiten in der Schweiz und im Ausland."
+    },
+    "courtesy": {
+      "title": "Leihfahrzeuge",
+      "description": "Wir stellen während der Reparaturzeit Leihfahrzeuge zur Verfügung."
+    },
+    "whyChooseUs": {
+      "title": "Warum uns wählen",
+      "experience": {
+        "title": "50 Jahre Erfahrung",
+        "description": "Mit einem halben Jahrhundert Erfahrung garantieren wir einen Service von höchster Qualität und Professionalität."
+      },
+      "certified": {
+        "title": "Zertifizierte Techniker",
+        "description": "Unser Team aus qualifizierten Technikern garantiert Reparaturen nach den höchsten Branchenstandards."
+      },
+      "quality": {
+        "title": "Garantierte Qualität",
+        "description": "Wir verwenden nur hochwertige Produkte und Ersatzteile, um dauerhafte und zuverlässige Ergebnisse zu gewährleisten."
+      },
+      "support": {
+        "title": "Umfassende Unterstützung",
+        "description": "Wir bieten umfassende Unterstützung von der ersten Bewertung bis zur Übergabe des reparierten Fahrzeugs."
+      }
+    }
+  },
+  "about": {
+    "title": "Über uns",
+    "text1": "Mit 50 Jahren Erfahrung ist die Carrozzeria Torpedo 2000 SA ein Referenzpunkt für Fahrzeugreparatur und -restaurierung im Kanton Tessin.",
+    "text2": "Wir sind ein Ausbildungsbetrieb und Mitglied des Schweizerischen Carrossierverbands, der sich für Qualität und Professionalität bei jeder Arbeit einsetzt.",
+    "text3": "Für unsere Kunden stellen wir während der Reparaturzeit auch Leihfahrzeuge zur Verfügung."
+  },
+  "cta": {
+    "title": "Fordern Sie ein kostenloses Angebot an",
+    "text": "Kontaktieren Sie uns noch heute für eine unverbindliche Beratung",
+    "button": "Kontaktieren Sie uns"
+  },
+  "findUs": {
+    "title": "Wo Sie uns finden",
+    "subtitle": "Unser Standort im Kanton Tessin",
+    "address": "Via Bellinzona 26, 6743 Bodio, Tessin, Schweiz",
+    "hours": "Öffnungszeiten",
+    "weekdays": "Montag - Freitag: 07:30 - 12:00, 13:30 - 17:30",
+    "saturday": "Samstag: Nur mit Termin",
+    "sunday": "Sonntag: Geschlossen",
+    "directions": "Wegbeschreibung",
+    "phone": "Telefon",
+    "email": "E-Mail"
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Wir sind für Sie da",
+    "description": "Füllen Sie das untenstehende Formular aus, um uns eine Anfrage zu senden oder ein Angebot anzufordern. Wir werden uns so schnell wie möglich bei Ihnen melden.",
+    "alwaysReachable": "Wir sind immer erreichbar:",
+    "officeHours": "Bürozeiten",
+    "weekdays": "Montag - Freitag: 07:30 - 12:00, 13:30 - 17:30",
+    "weekend": "Samstag - Sonntag: Geschlossen",
+    "followUs": "Folgen Sie uns auf Instagram",
+    "instagramDescription": "Entdecken Sie unsere neuesten Arbeiten und Neuigkeiten, indem Sie uns auf Instagram folgen",
+    "form": {
+      "title": "Kontaktformular",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "attachFile": "Datei hochladen",
+      "browse": "Durchsuchen",
+      "consentLabel": "Ich bin damit einverstanden, E-Mails über Ihre Produkte, Sonderangebote und Neuigkeiten zu erhalten.",
+      "submit": "Nachricht senden",
+      "success": "Vielen Dank für Ihre Kontaktaufnahme! Wir werden uns so schnell wie möglich bei Ihnen melden.",
+      "error": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns direkt."
+    }
+  },
+  "partners": {
+    "title": "Unsere Partner",
+    "subtitle": "Wir arbeiten mit den besten Unternehmen der Branche zusammen",
+    "description": "Die Carrozzeria Torpedo 2000 SA arbeitet mit den besten Partnern aus der Automobil- und Versicherungsbranche zusammen, um unseren Kunden qualitativ hochwertige Dienstleistungen und effiziente Lösungen zu garantieren.",
+    "becomePartner": "Werden Sie unser Partner",
+    "contactUs": "Kontaktieren Sie uns für eine Zusammenarbeit"
+  },
+  "gallery": {
+    "title": "Galerie",
+    "subtitle": "Unsere Arbeiten",
+    "categories": {
+      "all": "Alle",
+      "repairs": "Reparaturen",
+      "restorations": "Restaurierungen",
+      "paintwork": "Lackierungen"
+    }
+  },
+  "damageReport": {
+    "title": "Schadensmeldung",
+    "subtitle": "Melden Sie einen Schaden an Ihrem Fahrzeug",
+    "steps": {
+      "accident": {
+        "title": "Sie haben einen Schaden erlitten",
+        "description": "Ihr Fahrzeug hat einen Schaden erlitten und benötigt eine Reparatur"
+      },
+      "report": {
+        "title": "Füllen Sie das Formular aus",
+        "description": "Geben Sie die Details des Schadens und die erforderlichen Informationen ein"
+      },
+      "submit": {
+        "title": "Senden Sie die Anfrage",
+        "description": "Wir werden Sie schnellstmöglich kontaktieren, um einen Termin zu vereinbaren"
+      }
+    },
+    "form": {
+      "title": "Schadenmeldungsformular",
+      "fields": {
+        "firstName": "Vorname",
+        "lastName": "Nachname",
+        "email": "E-Mail",
+        "phone": "Telefon",
+        "vehicleInfo": "Fahrzeuginformationen",
+        "make": "Marke",
+        "model": "Modell",
+        "plate": "Kennzeichen",
+        "accidentDate": "Datum des Schadens",
+        "damageDescription": "Beschreibung des Schadens",
+        "photos": "Fotos des Schadens",
+        "uploadPhotos": "Fotos hochladen",
+        "dragPhotos": "oder hierher ziehen",
+        "photoFormats": "PNG, JPG, GIF bis zu 10MB",
+        "privacyConsent": "Ich stimme der Verarbeitung meiner personenbezogenen Daten gemäß der Datenschutzrichtlinie zu"
+      },
+      "submit": "Schadensmeldung senden"
+    }
+  },
+  "liabilityReport": {
+    "title": "Haftpflichtschadenmeldung",
+    "subtitle": "Melden Sie einen Haftpflichtschaden",
+    "form": {
+      "personalInfo": "Persönliche Informationen",
+      "name": "Vor- und Nachname",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "address": "Adresse",
+      "insuranceInfo": "Versicherungsinformationen",
+      "company": "Versicherungsgesellschaft",
+      "policyNumber": "Policennummer",
+      "incidentInfo": "Informationen zum Vorfall",
+      "date": "Datum des Vorfalls",
+      "location": "Ort des Vorfalls",
+      "description": "Beschreibung des Vorfalls",
+      "involvedParties": "Beteiligte Parteien",
+      "photos": "Fotos (optional)",
+      "upload": "Fotos hochladen",
+      "submit": "Meldung senden",
+      "success": "Ihre Meldung wurde erfolgreich gesendet! Wir werden uns in Kürze bei Ihnen melden.",
+      "error": "Beim Senden Ihrer Meldung ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns direkt."
+    }
+  },
+  "footer": {
+    "contacts": "Kontakte",
+    "quickLinks": "Schnelllinks",
+    "servicesTitle": "Dienstleistungen",
+    "copyright": "© {year} Carrozzeria Torpedo 2000 SA. Alle Rechte vorbehalten."
+  }
+} 

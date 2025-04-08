@@ -1,0 +1,204 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "Chi Siamo",
+    "services": "Servizi",
+    "gallery": "Galleria",
+    "contact": "Contatti",
+    "findUs": "Dove trovarci",
+    "partners": "Partner",
+    "damageReport": "Notifica di danno",
+    "liabilityReport": "Notifica danno RC"
+  },
+  "hero": {
+    "title": "Carrozzeria Torpedo 2000 SA",
+    "subtitle": "50 anni d'esperienza al vostro servizio",
+    "cta": "Contattaci"
+  },
+  "services": {
+    "title": "I Nostri Servizi",
+    "subtitle": "Offriamo una gamma completa di servizi per la cura, manutenzione e riparazione del tuo veicolo",
+    "repairs": {
+      "title": "Riparazioni e Verniciature",
+      "description": "Ripariamo e verniciamo autovetture e veicoli pesanti con la massima cura."
+    },
+    "hail": {
+      "title": "Danni da Grandine",
+      "description": "Ripariamo danni da grandine e piccole ammaccature con metodo alternativo."
+    },
+    "restoration": {
+      "title": "Restauri",
+      "description": "Offriamo servizi di restauro di ogni genere per veicoli d'epoca e classici."
+    },
+    "corrosion": {
+      "title": "Trattamenti Anti Corrosivi",
+      "description": "Eseguiamo trattamenti anti corrosivi per proteggere il vostro veicolo."
+    },
+    "glass": {
+      "title": "Sostituzione Vetri",
+      "description": "Sostituiamo parabrezza e vetri di ogni genere per autovetture e veicoli pesanti."
+    },
+    "insurance": {
+      "title": "Consulenza Assicurativa",
+      "description": "Offriamo consulenza per pratiche assicurative in Svizzera e all'estero."
+    },
+    "courtesy": {
+      "title": "Vetture di Cortesia",
+      "description": "Forniamo delle vetture di cortesia durante il periodo di riparazione."
+    },
+    "whyChooseUs": {
+      "title": "Perché Scegliere Noi",
+      "experience": {
+        "title": "50 Anni di Esperienza",
+        "description": "Con mezzo secolo di esperienza, garantiamo un servizio di qualità superiore e professionalità."
+      },
+      "certified": {
+        "title": "Tecnici Certificati",
+        "description": "Il nostro team di tecnici qualificati garantisce riparazioni eseguite secondo i più alti standard del settore."
+      },
+      "quality": {
+        "title": "Qualità Garantita",
+        "description": "Utilizziamo solo prodotti e ricambi di alta qualità per garantire risultati duraturi e affidabili."
+      },
+      "support": {
+        "title": "Assistenza Completa",
+        "description": "Offriamo un supporto completo dalla valutazione iniziale fino alla consegna del veicolo riparato."
+      }
+    }
+  },
+  "about": {
+    "title": "Chi Siamo",
+    "text1": "Con 50 anni di esperienza, Carrozzeria Torpedo 2000 SA rappresenta un punto di riferimento per la riparazione e il restauro di veicoli nel Canton Ticino.",
+    "text2": "Siamo un'azienda formatrice socia dell'Unione Svizzera dei Carrozzieri, impegnata nella qualità e nella professionalità in ogni lavoro.",
+    "text3": "Per i nostri clienti, forniamo anche vetture di cortesia durante il periodo di riparazione."
+  },
+  "cta": {
+    "title": "Richiedi un preventivo gratuito",
+    "text": "Contattaci oggi stesso per una consulenza senza impegno",
+    "button": "Contattaci"
+  },
+  "findUs": {
+    "title": "Dove Trovarci",
+    "subtitle": "La nostra sede nel Canton Ticino",
+    "address": "Via Bellinzona 26, 6743 Bodio, Ticino, Svizzera",
+    "hours": "Orari di Apertura",
+    "weekdays": "Lunedì - Venerdì: 07:30 - 12:00, 13:30 - 17:30",
+    "saturday": "Sabato: Chiuso",
+    "sunday": "Domenica: Chiuso",
+    "directions": "Indicazioni Stradali",
+    "phone": "Telefono",
+    "email": "Email"
+  },
+  "contact": {
+    "title": "Contattaci",
+    "subtitle": "Siamo qui per aiutarti",
+    "description": "Compila il modulo qui sotto per inviarci una richiesta o per chiedere un preventivo. Ti risponderemo al più presto.",
+    "alwaysReachable": "Siamo sempre raggiungibili:",
+    "officeHours": "Orari di ufficio",
+    "weekdays": "Lunedì - Venerdì: 07:30 - 12:00, 13:30 - 17:30",
+    "weekend": "Sabato - Domenica: Chiuso",
+    "followUs": "Seguici su Instagram",
+    "instagramDescription": "Scopri i nostri ultimi lavori e novità seguendoci su Instagram",
+    "form": {
+      "title": "Modulo di contatto",
+      "firstName": "Nome",
+      "lastName": "Cognome",
+      "phone": "Telefono",
+      "email": "E-Mail",
+      "subject": "Oggetto",
+      "message": "Messaggio",
+      "attachFile": "Carica file",
+      "browse": "Sfoglia",
+      "consentLabel": "Consento di ricevere e-mail sui vostri prodotti, offerte speciali e novità.",
+      "submit": "Invia messaggio",
+      "success": "Grazie per averci contattato! Ti risponderemo al più presto.",
+      "error": "Si è verificato un errore nell'invio del messaggio. Riprova più tardi o contattaci direttamente."
+    }
+  },
+  "partners": {
+    "title": "I Nostri Partner",
+    "subtitle": "Collaboriamo con le migliori aziende del settore",
+    "description": "La Carrozzeria Torpedo 2000 SA collabora con i migliori partner del settore automobilistico e assicurativo per garantire ai nostri clienti servizi di qualità e soluzioni efficienti.",
+    "becomePartner": "Diventa nostro partner",
+    "contactUs": "Contattaci per collaborare"
+  },
+  "gallery": {
+    "title": "Galleria",
+    "subtitle": "I nostri lavori",
+    "categories": {
+      "all": "Tutti",
+      "repairs": "Riparazioni",
+      "restorations": "Restauri",
+      "paintwork": "Verniciatura"
+    }
+  },
+  "damageReport": {
+    "title": "Notifica di Danno",
+    "subtitle": "Segnala un danno al tuo veicolo",
+    "steps": {
+      "accident": {
+        "title": "Hai subito un danno",
+        "description": "Il tuo veicolo ha subito un danno e necessita di riparazione"
+      },
+      "report": {
+        "title": "Compila il modulo",
+        "description": "Inserisci i dettagli del danno e le informazioni richieste"
+      },
+      "submit": {
+        "title": "Invia la richiesta",
+        "description": "Ti contatteremo al più presto per fissare un appuntamento"
+      }
+    },
+    "form": {
+      "title": "Modulo di segnalazione",
+      "fields": {
+        "firstName": "Nome",
+        "lastName": "Cognome",
+        "email": "Email",
+        "phone": "Telefono",
+        "vehicleInfo": "Informazioni sul veicolo",
+        "make": "Marca",
+        "model": "Modello",
+        "plate": "Targa",
+        "accidentDate": "Data del danno",
+        "damageDescription": "Descrizione del danno",
+        "photos": "Foto del danno",
+        "uploadPhotos": "Carica foto",
+        "dragPhotos": "o trascina qui",
+        "photoFormats": "PNG, JPG, GIF fino a 10MB",
+        "privacyConsent": "Acconsento al trattamento dei miei dati personali secondo la politica sulla privacy"
+      },
+      "submit": "Invia segnalazione"
+    }
+  },
+  "liabilityReport": {
+    "title": "Notifica Danno RC",
+    "subtitle": "Segnala un danno di responsabilità civile",
+    "form": {
+      "personalInfo": "Informazioni Personali",
+      "name": "Nome e Cognome",
+      "email": "Email",
+      "phone": "Telefono",
+      "address": "Indirizzo",
+      "insuranceInfo": "Informazioni Assicurative",
+      "company": "Compagnia Assicurativa",
+      "policyNumber": "Numero Polizza",
+      "incidentInfo": "Informazioni sull'Incidente",
+      "date": "Data dell'Incidente",
+      "location": "Luogo dell'Incidente",
+      "description": "Descrizione dell'Incidente",
+      "involvedParties": "Parti Coinvolte",
+      "photos": "Foto (opzionale)",
+      "upload": "Carica Foto",
+      "submit": "Invia Segnalazione",
+      "success": "La tua segnalazione è stata inviata con successo! Ti contatteremo presto.",
+      "error": "Si è verificato un errore nell'invio della segnalazione. Riprova più tardi o contattaci direttamente."
+    }
+  },
+  "footer": {
+    "contacts": "Contatti",
+    "quickLinks": "Link Rapidi",
+    "servicesTitle": "Servizi",
+    "copyright": "© {year} Carrozzeria Torpedo 2000 SA. Tutti i diritti riservati."
+  }
+} 
