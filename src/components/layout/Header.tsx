@@ -89,26 +89,26 @@ export default function Header({ locale = 'it', dictionary }: HeaderProps) {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-6">
-            <Link href={`/${locale}`} className="text-gray-800 hover:text-red-600 font-medium">
+          <nav className="hidden lg:flex space-x-3">
+            <Link href={`/${locale}`} className="text-gray-800 hover:text-red-600 font-medium whitespace-nowrap px-2">
               {nav.home}
             </Link>
-            <Link href={createLocalizedHref('/services')} className="text-gray-800 hover:text-red-600 font-medium">
+            <Link href={createLocalizedHref('/services')} className="text-gray-800 hover:text-red-600 font-medium whitespace-nowrap px-2">
               {nav.services}
             </Link>
-            <Link href={createLocalizedHref('/find-us')} className="text-gray-800 hover:text-red-600 font-medium">
+            <Link href={createLocalizedHref('/find-us')} className="text-gray-800 hover:text-red-600 font-medium whitespace-nowrap px-2">
               {nav.findUs}
             </Link>
-            <Link href={createLocalizedHref('/contact')} className="text-gray-800 hover:text-red-600 font-medium">
+            <Link href={createLocalizedHref('/contact')} className="text-gray-800 hover:text-red-600 font-medium whitespace-nowrap px-2">
               {nav.contact}
             </Link>
-            <Link href={createLocalizedHref('/partners')} className="text-gray-800 hover:text-red-600 font-medium">
+            <Link href={createLocalizedHref('/partners')} className="text-gray-800 hover:text-red-600 font-medium whitespace-nowrap px-2">
               {nav.partners}
             </Link>
-            <Link href={createLocalizedHref('/gallery')} className="text-gray-800 hover:text-red-600 font-medium">
+            <Link href={createLocalizedHref('/gallery')} className="text-gray-800 hover:text-red-600 font-medium whitespace-nowrap px-2">
               {nav.gallery}
             </Link>
-            <Link href={createLocalizedHref('/damage-report')} className="text-gray-800 hover:text-red-600 font-medium">
+            <Link href={createLocalizedHref('/damage-report')} className="text-gray-800 hover:text-red-600 font-medium whitespace-nowrap px-2">
               {nav.damageReport}
             </Link>
           </nav>
@@ -149,7 +149,8 @@ export default function Header({ locale = 'it', dictionary }: HeaderProps) {
             {/* Mobile menu button */}
             <button 
               onClick={toggleMobileMenu}
-              className="md:hidden text-gray-800 hover:text-red-600"
+              className="lg:hidden text-gray-800 hover:text-red-600"
+              aria-label="Toggle menu"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -160,7 +161,7 @@ export default function Header({ locale = 'it', dictionary }: HeaderProps) {
         
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 border-t">
+          <div className="lg:hidden py-4 border-t">
             <nav className="flex flex-col space-y-3">
               <Link 
                 href={`/${locale}`}
