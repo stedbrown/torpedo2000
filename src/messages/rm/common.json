@@ -68,14 +68,26 @@
   },
   "about": {
     "title": "Davart nus",
-    "text1": "Cun 50 onns experientscha, la Carrozzeria Torpedo 2000 SA represchenta in punct da referenza per la reparatura e la restauraziun da vehichels en il chantun Tessin.",
-    "text2": "Nus essan ina interpresa formatriza commembra da l'Uniun Svizra dals Carrozziers, ingaschada en la qualitad e la professiunalitad en mintga lavur.",
-    "text3": "Per noss clients, nus furnin er vehichels da cortesia durant il temp da reparatura."
+    "text1": "Cun 50 onns experientscha, la Carrozzeria Torpedo 2000 SA è in punct da referiment per la reparatura e restauraziun da vehichels en il chantun Tessin.",
+    "text2": "Nus essan ina interpresa da scolaziun commembra da l'Uniun Svizra dals Carrozziers, engaschada per qualitad e professiunalitad en mintga lavur.",
+    "text3": "Per noss clients, nus furnin er vehichels da curtoisia durant il temp da reparatura."
+  },
+  "excellence": {
+    "title": "Excellenza en la scolaziun",
+    "description": "Cun superbia, nus essan ina interpresa da scolaziun officialmain renconuschida e commembra activa da l'Uniun Svizra dals Carrozziers, engaschada per l'excellenza professiunala e la scolaziun da las generaziuns futuras dad artisans.",
+    "carrosserieSuisse": {
+      "title": "Uniun Svizra dals Carrozziers",
+      "description": "Commember uffizial da l'associaziun che garantescha standards da qualitad auts en il sectur da la carrossaria."
+    },
+    "trainingCompany": {
+      "title": "Interpresa da Scolaziun Certificada",
+      "description": "Nus investin en il futur cun scolar talents giuvens cun abilitads tecnicas da l'ultim stan."
+    }
   },
   "cta": {
-    "title": "Dumandai in preventiv gratuit",
-    "text": "Contactai nus gia oz per ina cussegliaziun senza obligaziun",
-    "button": "Contactai nus"
+    "title": "Dumondar in preventiv gratuit",
+    "text": "Contactar nus oz per ina consultaziun senza obligaziun",
+    "button": "Contactar nus"
   },
   "findUs": {
     "title": "Nua ans chattar",
@@ -197,8 +209,85 @@
   },
   "footer": {
     "contacts": "Contacts",
-    "quickLinks": "Links sperts",
+    "quickLinks": "Colliaziuns sveltas",
     "servicesTitle": "Servetschs",
-    "copyright": "© {year} Carrozzeria Torpedo 2000 SA. Tut ils dretgs reservads."
+    "copyright": "© {year} Carrozzeria Torpedo 2000 SA. Tut ils dretgs reservads.",
+    "privacyPolicy": "Directivas da protecziun da datas"
+  },
+  "privacyPolicy": {
+    "title": "Directivas da protecziun da datas",
+    "generalInfo": {
+      "title": "1. Infurmaziuns generalas",
+      "text1": "Questas directivas da protecziun da datas descrivan co che Carrozzeria Torpedo 2000 SA ramassa ed utilisescha datas persunalas che vegnan messas a disposiziun dals utilisaders cun utilisar nossa pagina d'internet.",
+      "text2": "Nossas activitads èn suttamessas a la Lescha federala svizra davart la protecziun da datas (LPD). Nus ans obligain da proteger la sfera privata dals utilisaders e da tractar las datas persunalas tenor las leschas valaivlas."
+    },
+    "dataController": {
+      "title": "2. Responsabel per il tractament da las datas",
+      "text": "Il responsabel per il tractament da las datas persunalas è:",
+      "company": "Carrozzeria Torpedo 2000 SA",
+      "address": "Via Bellinzona 26",
+      "city": "6743 Bodio",
+      "region": "Tessin, Svizra",
+      "email": "E-mail: info@torpedo2000.ch",
+      "phone": "Telefon: +41 91 864 22 05"
+    },
+    "dataCollection": {
+      "title": "3. Datas ramassadas e finamiras",
+      "text1": "Nossa pagina d'internet ramassa be datas che Vus ans mettais a disposiziun voluntarmain via il formular da contact u per e-mail. Questas datas pon includer:",
+      "dataTypes": [
+        "Num e prenum",
+        "Adressa d'e-mail",
+        "Numer da telefon",
+        "Ulteriurs detagls che Vus vulais communicar a nus"
+      ],
+      "text2": "Nus utilisain questas infurmaziuns mo per:",
+      "usageTypes": [
+        "Respunder a Vossas dumondas",
+        "Metter a disposiziun ils servetschs dumandads",
+        "Meglierar nossa pagina d'internet e nos servetschs"
+      ]
+    },
+    "cookies": {
+      "title": "4. Cookies e tecnologias da tracking",
+      "text": "Nossa pagina d'internet n'utilisescha naginas cookies u autras tecnologias da tracking. Nus na ramassain betg automaticamain datas davart il cumportament da navigaziun dals utilisaders."
+    },
+    "dataSharing": {
+      "title": "5. Cundivider datas",
+      "text": "Nus na vendain, na dain a tschains e na cundividain betg Vossas datas persunalas cun terzas partidas, exceptà:",
+      "exceptions": [
+        "Sche quai è necessari per metter a disposiziun in servetsch dumandà",
+        "Sche nus essan legalmain obligads da far quai",
+        "Sche nus avain Voss consentiment explicit"
+      ]
+    },
+    "dataRetention": {
+      "title": "6. Conservaziun da las datas",
+      "text": "Nus conservain Vossas datas persunalas mo uschè ditg sco quai è necessari per las finamiras per las qualas ellas èn vegnidas ramassadas u per ademplir las pretensiuns legalas."
+    },
+    "yourRights": {
+      "title": "7. Voss dretgs",
+      "text1": "Tenor la Lescha federala svizra davart la protecziun da datas avais Vus il dretg:",
+      "rights": [
+        "D'acceder a Vossas datas persunalas",
+        "Da dumandar la correctura da datas inexactas",
+        "Da dumandar la stizzada da Vossas datas",
+        "Da Vus opponer al tractament da Vossas datas",
+        "Da far ina reclamaziun tar l'autoritad da surveglianza cumpetenta"
+      ],
+      "text2": "Per exercitar quests dretgs pudais Vus ans contactar via las datas da contact inditgadas en la secziun \"Responsabel per il tractament da las datas\"."
+    },
+    "dataSecurity": {
+      "title": "8. Segirezza da las datas",
+      "text": "Nus prendain mesiras da segirezza tecnicas ed organisatoricas adequatas per proteger Vossas datas persunalas cunter la perdita, l'access nunautorisà, la publicaziun, la midada u la destrucziun."
+    },
+    "thirdPartyLinks": {
+      "title": "9. Colliaziuns a paginas d'internet da terzas partidas",
+      "text": "Nossa pagina d'internet po cuntegnair colliaziuns a paginas d'internet da terzas partidas. Nus n'essan betg responsabels per las praticas da protecziun da datas u il cuntegn da questas paginas d'internet. Nus recumandain da leger las directivas da protecziun da datas da mintga pagina d'internet che Vus visitais."
+    },
+    "changes": {
+      "title": "10. Midadas da las directivas da protecziun da datas",
+      "text1": "Nus ans reservain il dretg da midar questas directivas da protecziun da datas da tut temp. Mintga midada vegn publitgada sin questa pagina. Nus recumandain da visitar regularmain questa pagina per restar sin il current.",
+      "lastModified": "Ultima midada:"
+    }
   }
 } 

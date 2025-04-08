@@ -31,6 +31,11 @@ export function middleware(request: NextRequest) {
     return;
   }
 
+  // Reindirizzamento diretto per la root path alla versione italiana
+  if (pathname === '/') {
+    return NextResponse.redirect(new URL('/it', request.url));
+  }
+
   // Check if there is any supported locale in the pathname
   const pathnameIsMissingLocale = locales.every(
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`

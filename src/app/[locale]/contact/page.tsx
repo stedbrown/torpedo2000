@@ -2,7 +2,7 @@ import React from 'react';
 import { getDictionary } from '@/lib/dictionaries';
 import { locales } from '@/middleware';
 import ContactForm from '@/components/contact/ContactForm';
-import { FaInstagram } from 'react-icons/fa';
+import { FaInstagram, FaFacebook } from 'react-icons/fa';
 import Image from 'next/image';
 
 export async function generateStaticParams() {
@@ -54,15 +54,26 @@ export default async function ContactPage({
           <p className="text-xl mb-8 text-gray-800 max-w-2xl mx-auto">
             {messages.contact.instagramDescription}
           </p>
-          <a 
-            href="https://www.instagram.com/carrozzeriatorp2000" 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
-          >
-            <FaInstagram className="mr-2 text-xl" />
-            @carrozzeriatorp2000
-          </a>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <a 
+              href="https://www.facebook.com/carrozzeriatorpedo2000" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
+            >
+              <FaFacebook className="mr-2 text-xl" />
+              Torpedo 2000 SA
+            </a>
+            <a 
+              href="https://www.instagram.com/carrozzeriatorp2000" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
+            >
+              <FaInstagram className="mr-2 text-xl" />
+              @carrozzeriatorp2000
+            </a>
+          </div>
         </div>
       </section>
     </main>

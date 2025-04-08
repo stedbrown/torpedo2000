@@ -121,37 +121,37 @@ export default function LiabilityReportForm({ messages, locale }: LiabilityRepor
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       <h2 className="text-2xl font-bold mb-6 text-gray-900 border-b pb-3">
-        {messages.liabilityReport.form.title || "Notifica di responsabilità civile"}
+        {messages.liabilityReport?.title || "Notifica Danno RC"}
       </h2>
       
       <div className="space-y-4">
-        <h3 className="text-lg font-medium text-gray-800">{messages.liabilityReport.personalInfo || "Dati personali"}</h3>
+        <h3 className="text-lg font-medium text-gray-800">{messages.liabilityReport?.form?.personalInfo || "Informazioni Personali"}</h3>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <label className="block text-gray-700 font-medium mb-2" htmlFor="firstName">
-              {messages.liabilityReport.form.fields.firstName || "Nome"}*
+              {messages.liabilityReport?.form?.name?.split(' ')[0] || "Nome"}*
             </label>
             <input 
               type="text" 
               id="firstName" 
               value={formData.firstName}
               onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
               required
             />
           </div>
           
           <div>
             <label className="block text-gray-700 font-medium mb-2" htmlFor="lastName">
-              {messages.liabilityReport.form.fields.lastName || "Cognome"}*
+              {messages.liabilityReport?.form?.name?.split(' ')[2] || "Cognome"}*
             </label>
             <input 
               type="text" 
               id="lastName" 
               value={formData.lastName}
               onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
               required
             />
           </div>
@@ -160,27 +160,27 @@ export default function LiabilityReportForm({ messages, locale }: LiabilityRepor
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <label className="block text-gray-700 font-medium mb-2" htmlFor="email">
-              {messages.liabilityReport.form.fields.email || "Email"}
+              {messages.liabilityReport?.form?.email || "Email"}
             </label>
             <input 
               type="email" 
               id="email" 
               value={formData.email}
               onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
             />
           </div>
           
           <div>
             <label className="block text-gray-700 font-medium mb-2" htmlFor="phone">
-              {messages.liabilityReport.form.fields.phone || "Telefono"}*
+              {messages.liabilityReport?.form?.phone || "Telefono"}*
             </label>
             <input 
               type="tel" 
               id="phone" 
               value={formData.phone}
               onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
               required
             />
           </div>
@@ -189,28 +189,28 @@ export default function LiabilityReportForm({ messages, locale }: LiabilityRepor
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <label className="block text-gray-700 font-medium mb-2" htmlFor="address">
-              {messages.liabilityReport.form.fields.address || "Indirizzo"}*
+              {messages.liabilityReport?.form?.fields?.address || "Indirizzo"}*
             </label>
             <input 
               type="text" 
               id="address" 
               value={formData.address}
               onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
               required
             />
           </div>
           
           <div>
             <label className="block text-gray-700 font-medium mb-2" htmlFor="zipCity">
-              {messages.liabilityReport.form.fields.zipCity || "CAP / Località"}*
+              {messages.liabilityReport?.form?.fields?.zipCity || "CAP / Località"}*
             </label>
             <input 
               type="text" 
               id="zipCity" 
               value={formData.zipCity}
               onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
               required
             />
           </div>
@@ -218,64 +218,64 @@ export default function LiabilityReportForm({ messages, locale }: LiabilityRepor
         
         <div>
           <label className="block text-gray-700 font-medium mb-2" htmlFor="incidentDate">
-            {messages.liabilityReport.form.fields.incidentDate || "Data dell'incidente"}*
+            {messages.liabilityReport?.form?.fields?.incidentDate || "Data dell'incidente"}*
           </label>
           <input 
             type="date" 
             id="incidentDate" 
             value={formData.incidentDate}
             onChange={handleInputChange}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
             required
           />
         </div>
       </div>
       
       <div className="space-y-4 pt-4">
-        <h3 className="text-lg font-medium text-gray-800">{messages.liabilityReport.insuranceInfo || "Informazioni sull'assicurazione"}</h3>
+        <h3 className="text-lg font-medium text-gray-800">{messages.liabilityReport?.insuranceInfo || "Informazioni sull'assicurazione"}</h3>
         
         <div>
           <label className="block text-gray-700 font-medium mb-2" htmlFor="insurance">
-            {messages.liabilityReport.form.fields.insurance || "Compagnia di assicurazione"}*
+            {messages.liabilityReport?.form?.fields?.insurance || "Compagnia di assicurazione"}*
           </label>
           <input 
             type="text" 
             id="insurance" 
             value={formData.insurance}
             onChange={handleInputChange}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
             required
           />
         </div>
         
         <div>
           <label className="block text-gray-700 font-medium mb-2" htmlFor="policyNumber">
-            {messages.liabilityReport.form.fields.policyNumber || "Numero di polizza"}*
+            {messages.liabilityReport?.form?.fields?.policyNumber || "Numero di polizza"}*
           </label>
           <input 
             type="text" 
             id="policyNumber" 
             value={formData.policyNumber}
             onChange={handleInputChange}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
             required
           />
         </div>
       </div>
       
       <div className="space-y-4 pt-4">
-        <h3 className="text-lg font-medium text-gray-800">{messages.liabilityReport.thirdPartyInfo || "Informazioni della parte lesa"}</h3>
+        <h3 className="text-lg font-medium text-gray-800">{messages.liabilityReport?.thirdPartyInfo || "Informazioni della parte lesa"}</h3>
         
         <div>
           <label className="block text-gray-700 font-medium mb-2" htmlFor="otherParty">
-            {messages.liabilityReport.form.fields.otherParty || "Nome e cognome"}*
+            {messages.liabilityReport?.form?.fields?.otherParty || "Nome e cognome"}*
           </label>
           <input 
             type="text" 
             id="otherParty" 
             value={formData.otherParty}
             onChange={handleInputChange}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
             required
           />
         </div>
@@ -283,28 +283,28 @@ export default function LiabilityReportForm({ messages, locale }: LiabilityRepor
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <label className="block text-gray-700 font-medium mb-2" htmlFor="otherPartyContact">
-              {messages.liabilityReport.form.fields.otherPartyContact || "Contatto"}*
+              {messages.liabilityReport?.form?.fields?.otherPartyContact || "Contatto"}*
             </label>
             <input 
               type="text" 
               id="otherPartyContact" 
               value={formData.otherPartyContact}
               onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
               required
             />
           </div>
           
           <div>
             <label className="block text-gray-700 font-medium mb-2" htmlFor="damageDescription">
-              {messages.liabilityReport.form.fields.damageDescription || "Descrizione del danno"}*
+              {messages.liabilityReport?.form?.fields?.damageDescription || "Descrizione del danno"}*
             </label>
             <textarea 
               id="damageDescription" 
               value={formData.damageDescription}
               onChange={handleInputChange}
               rows={4}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
               required
             ></textarea>
           </div>
@@ -313,7 +313,7 @@ export default function LiabilityReportForm({ messages, locale }: LiabilityRepor
       
       <div>
         <label className="block text-gray-700 font-medium mb-2" htmlFor="file-upload">
-          {messages.liabilityReport.form.fields.uploadFiles || "Carica file"}
+          {messages.liabilityReport?.form?.fields?.uploadFiles || "Carica file"}
         </label>
         <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
           <div className="space-y-1 text-center">
@@ -323,7 +323,7 @@ export default function LiabilityReportForm({ messages, locale }: LiabilityRepor
                 htmlFor="file-upload"
                 className="relative cursor-pointer bg-white rounded-md font-medium text-red-600 hover:text-red-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-red-500"
               >
-                <span>{messages.liabilityReport.form.fields.uploadPhotos || "Carica file"}</span>
+                <span>{messages.liabilityReport?.form?.fields?.uploadPhotos || "Carica file"}</span>
                 <input 
                   id="file-upload" 
                   name="file-upload" 
@@ -334,9 +334,9 @@ export default function LiabilityReportForm({ messages, locale }: LiabilityRepor
                 />
               </label>
             </div>
-            <p className="text-xs text-gray-500">{messages.liabilityReport.form.fields.photoFormats || "PNG, JPG, PDF fino a 10MB"}</p>
+            <p className="text-xs text-gray-500">{messages.liabilityReport?.form?.fields?.photoFormats || "PNG, JPG, PDF fino a 10MB"}</p>
             {formData.files.length > 0 && (
-              <p className="text-sm text-gray-700">{formData.files.length} {messages.liabilityReport.form.fields.filesSelected || "file selezionati"}</p>
+              <p className="text-sm text-gray-700">{formData.files.length} {messages.liabilityReport?.form?.fields?.filesSelected || "file selezionati"}</p>
             )}
           </div>
         </div>
@@ -356,7 +356,7 @@ export default function LiabilityReportForm({ messages, locale }: LiabilityRepor
         </div>
         <div className="ml-3 text-sm">
           <label htmlFor="consent" className="font-medium text-gray-700">
-            {messages.liabilityReport.form.fields.privacyConsent || "Acconsento al trattamento dei miei dati personali per l'elaborazione della notifica di responsabilità civile."}
+            {messages.liabilityReport?.form?.fields?.privacyConsent || "Acconsento al trattamento dei miei dati personali per l'elaborazione della notifica di responsabilità civile."}
           </label>
         </div>
       </div>
@@ -373,7 +373,7 @@ export default function LiabilityReportForm({ messages, locale }: LiabilityRepor
           disabled={submitting}
           className={`bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ${submitting ? 'opacity-50 cursor-not-allowed' : ''}`}
         >
-          {submitting ? (messages.liabilityReport.submitting || "Invio in corso...") : (messages.liabilityReport.submit || "Invia notifica")}
+          {submitting ? (messages.liabilityReport?.submitting || "Invio in corso...") : (messages.liabilityReport?.submit || "Invia notifica")}
         </button>
       </div>
     </form>

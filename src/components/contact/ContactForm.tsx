@@ -139,7 +139,7 @@ export default function ContactForm({ locale, messages }: ContactFormProps) {
                 name="firstName"
                 value={formState.firstName}
                 onChange={handleInputChange}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900"
                 required
               />
             </div>
@@ -154,7 +154,7 @@ export default function ContactForm({ locale, messages }: ContactFormProps) {
                 name="lastName"
                 value={formState.lastName}
                 onChange={handleInputChange}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900"
                 required
               />
             </div>
@@ -171,7 +171,7 @@ export default function ContactForm({ locale, messages }: ContactFormProps) {
                 name="phone"
                 value={formState.phone}
                 onChange={handleInputChange}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900"
                 required
               />
             </div>
@@ -186,7 +186,7 @@ export default function ContactForm({ locale, messages }: ContactFormProps) {
                 name="email"
                 value={formState.email}
                 onChange={handleInputChange}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900"
               />
             </div>
           </div>
@@ -201,7 +201,7 @@ export default function ContactForm({ locale, messages }: ContactFormProps) {
               name="subject"
               value={formState.subject}
               onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900"
               required
             />
           </div>
@@ -216,7 +216,7 @@ export default function ContactForm({ locale, messages }: ContactFormProps) {
               rows={6}
               value={formState.message}
               onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent text-gray-900"
               required
             ></textarea>
           </div>

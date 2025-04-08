@@ -1,6 +1,6 @@
 import { getDictionary } from '@/lib/dictionaries';
 import { locales } from '@/middleware';
-import { FaMapMarkerAlt, FaClock, FaPhone, FaEnvelope, FaCarSide, FaDirections } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaClock, FaPhone, FaEnvelope, FaCarSide, FaDirections, FaFacebookSquare, FaInstagram } from 'react-icons/fa';
 import Image from 'next/image';
 
 export async function generateStaticParams() {
@@ -145,6 +145,31 @@ export default async function FindUsPage({
                       <a href="mailto:info@torpedo2000.ch" className="hover:text-red-600 transition-colors">info@torpedo2000.ch</a>
                     </p>
                   </div>
+                </div>
+              </div>
+              
+              {/* Social Media Section */}
+              <div className="mt-8 pt-6 border-t border-gray-200">
+                <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Seguici sui social</h3>
+                <div className="flex justify-center space-x-6">
+                  <a 
+                    href="https://www.facebook.com/carrozzeriatorpedo2000" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+                  >
+                    <FaFacebookSquare className="text-3xl mr-2" />
+                    <span className="font-medium">Facebook</span>
+                  </a>
+                  <a 
+                    href="https://www.instagram.com/carrozzeriatorp2000" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center text-pink-600 hover:text-pink-800 transition-colors"
+                  >
+                    <FaInstagram className="text-3xl mr-2" />
+                    <span className="font-medium">Instagram</span>
+                  </a>
                 </div>
               </div>
               

@@ -147,7 +147,7 @@ export default function DamageReportForm({ messages, locale }: DamageReportFormP
               id="firstName" 
               value={formData.firstName}
               onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
               required
             />
           </div>
@@ -161,7 +161,7 @@ export default function DamageReportForm({ messages, locale }: DamageReportFormP
               id="lastName" 
               value={formData.lastName}
               onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
               required
             />
           </div>
@@ -177,7 +177,7 @@ export default function DamageReportForm({ messages, locale }: DamageReportFormP
               id="email" 
               value={formData.email}
               onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
             />
           </div>
           
@@ -190,7 +190,7 @@ export default function DamageReportForm({ messages, locale }: DamageReportFormP
               id="phone" 
               value={formData.phone}
               onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
               required
             />
           </div>
@@ -207,7 +207,7 @@ export default function DamageReportForm({ messages, locale }: DamageReportFormP
               value={formData.plate}
               onChange={handleInputChange}
               placeholder={messages.damageReport.form.fields.plate}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
               required
             />
             <input 
@@ -216,7 +216,7 @@ export default function DamageReportForm({ messages, locale }: DamageReportFormP
               value={formData.make}
               onChange={handleInputChange}
               placeholder={messages.damageReport.form.fields.make}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
               required
             />
             <input 
@@ -225,7 +225,7 @@ export default function DamageReportForm({ messages, locale }: DamageReportFormP
               value={formData.model}
               onChange={handleInputChange}
               placeholder={messages.damageReport.form.fields.model}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
               required
             />
           </div>
@@ -240,7 +240,7 @@ export default function DamageReportForm({ messages, locale }: DamageReportFormP
             id="company" 
             value={formData.company}
             onChange={handleInputChange}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
           />
         </div>
         
@@ -252,7 +252,7 @@ export default function DamageReportForm({ messages, locale }: DamageReportFormP
             id="damageType" 
             value={formData.damageType}
             onChange={handleInputChange}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
             required
           >
             <option value="">{messages.damageReport.selectDamageType || "Seleziona il tipo di danno"}</option>
@@ -273,7 +273,7 @@ export default function DamageReportForm({ messages, locale }: DamageReportFormP
               id="address" 
               value={formData.address}
               onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
             />
           </div>
           
@@ -286,7 +286,7 @@ export default function DamageReportForm({ messages, locale }: DamageReportFormP
               id="zipCity" 
               value={formData.zipCity}
               onChange={handleInputChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
               required
             />
           </div>
@@ -305,7 +305,7 @@ export default function DamageReportForm({ messages, locale }: DamageReportFormP
             id="accidentDate" 
             value={formData.accidentDate}
             onChange={handleInputChange}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
             required
           />
         </div>
@@ -319,7 +319,7 @@ export default function DamageReportForm({ messages, locale }: DamageReportFormP
             id="accidentLocation" 
             value={formData.accidentLocation}
             onChange={handleInputChange}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
             required
           />
         </div>
@@ -333,7 +333,7 @@ export default function DamageReportForm({ messages, locale }: DamageReportFormP
             value={formData.accidentDescription}
             onChange={handleInputChange}
             rows={4}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
             required
           ></textarea>
         </div>
@@ -347,7 +347,7 @@ export default function DamageReportForm({ messages, locale }: DamageReportFormP
             id="reportedBy" 
             value={formData.reportedBy}
             onChange={handleInputChange}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
           />
         </div>
         
@@ -360,7 +360,7 @@ export default function DamageReportForm({ messages, locale }: DamageReportFormP
             id="claimNumber" 
             value={formData.claimNumber}
             onChange={handleInputChange}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-gray-900"
           />
         </div>
       </div>

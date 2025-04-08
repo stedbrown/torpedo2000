@@ -69,11 +69,23 @@
   "about": {
     "title": "Über uns",
     "text1": "Mit 50 Jahren Erfahrung ist die Carrozzeria Torpedo 2000 SA ein Referenzpunkt für Fahrzeugreparatur und -restaurierung im Kanton Tessin.",
-    "text2": "Wir sind ein Ausbildungsbetrieb und Mitglied des Schweizerischen Carrossierverbands, der sich für Qualität und Professionalität bei jeder Arbeit einsetzt.",
-    "text3": "Für unsere Kunden stellen wir während der Reparaturzeit auch Leihfahrzeuge zur Verfügung."
+    "text2": "Wir sind ein Ausbildungsunternehmen und Mitglied des Schweizerischen Carrosserieverband, der sich für Qualität und Professionalität bei jeder Arbeit einsetzt.",
+    "text3": "Für unsere Kunden stellen wir während der Reparaturzeit auch Ersatzfahrzeuge zur Verfügung."
+  },
+  "excellence": {
+    "title": "Exzellenz in der Ausbildung",
+    "description": "Wir sind stolz darauf, ein offiziell anerkanntes Ausbildungsunternehmen und aktives Mitglied des Schweizerischen Carrosserieverbandes zu sein, das sich für professionelle Exzellenz und die Ausbildung künftiger Handwerkergenerationen einsetzt.",
+    "carrosserieSuisse": {
+      "title": "Schweizerischer Carrosserieverband",
+      "description": "Offizielles Mitglied des Verbandes, der hohe Qualitätsstandards in der Karosseriebranche garantiert."
+    },
+    "trainingCompany": {
+      "title": "Zertifiziertes Ausbildungsunternehmen",
+      "description": "Wir investieren in die Zukunft, indem wir junge Talente mit modernsten technischen Fähigkeiten ausbilden."
+    }
   },
   "cta": {
-    "title": "Fordern Sie ein kostenloses Angebot an",
+    "title": "Fordern Sie einen kostenlosen Kostenvoranschlag an",
     "text": "Kontaktieren Sie uns noch heute für eine unverbindliche Beratung",
     "button": "Kontaktieren Sie uns"
   },
@@ -196,9 +208,86 @@
     }
   },
   "footer": {
-    "contacts": "Kontakte",
+    "contacts": "Kontakt",
     "quickLinks": "Schnelllinks",
     "servicesTitle": "Dienstleistungen",
-    "copyright": "© {year} Carrozzeria Torpedo 2000 SA. Alle Rechte vorbehalten."
+    "copyright": "© {year} Carrozzeria Torpedo 2000 SA. Alle Rechte vorbehalten.",
+    "privacyPolicy": "Datenschutzerklärung"
+  },
+  "privacyPolicy": {
+    "title": "Datenschutzerklärung",
+    "generalInfo": {
+      "title": "1. Allgemeine Informationen",
+      "text1": "Diese Datenschutzerklärung beschreibt, wie Carrozzeria Torpedo 2000 SA personenbezogene Daten erhebt und verwendet, die von Benutzern bei der Nutzung unserer Website zur Verfügung gestellt werden.",
+      "text2": "Unsere Aktivitäten unterliegen dem Schweizerischen Bundesgesetz über den Datenschutz (DSG). Wir verpflichten uns, die Privatsphäre der Benutzer zu schützen und personenbezogene Daten in Übereinstimmung mit den geltenden Gesetzen zu verarbeiten."
+    },
+    "dataController": {
+      "title": "2. Verantwortlicher für die Datenverarbeitung",
+      "text": "Der Verantwortliche für die Verarbeitung personenbezogener Daten ist:",
+      "company": "Carrozzeria Torpedo 2000 SA",
+      "address": "Via Bellinzona 26",
+      "city": "6743 Bodio",
+      "region": "Tessin, Schweiz",
+      "email": "E-Mail: info@torpedo2000.ch",
+      "phone": "Telefon: +41 91 864 22 05"
+    },
+    "dataCollection": {
+      "title": "3. Erhobene Daten und Zwecke",
+      "text1": "Unsere Website erfasst nur Daten, die Sie uns freiwillig über das Kontaktformular oder per E-Mail zur Verfügung stellen. Diese Daten können umfassen:",
+      "dataTypes": [
+        "Vor- und Nachname",
+        "E-Mail-Adresse",
+        "Telefonnummer",
+        "Weitere Details, die Sie uns mitteilen möchten"
+      ],
+      "text2": "Wir verwenden diese Informationen nur für:",
+      "usageTypes": [
+        "Die Beantwortung Ihrer Anfragen",
+        "Die Bereitstellung der angeforderten Dienstleistungen",
+        "Die Verbesserung unserer Website und unserer Dienstleistungen"
+      ]
+    },
+    "cookies": {
+      "title": "4. Cookies und Tracking-Technologien",
+      "text": "Unsere Website verwendet keine Cookies oder andere Tracking-Technologien. Wir erfassen nicht automatisch Daten über das Surfverhalten der Benutzer."
+    },
+    "dataSharing": {
+      "title": "5. Weitergabe von Daten",
+      "text": "Wir verkaufen, vermieten oder teilen Ihre personenbezogenen Daten nicht mit Dritten, es sei denn:",
+      "exceptions": [
+        "Es ist erforderlich, um eine angeforderte Dienstleistung zu erbringen",
+        "Wir sind gesetzlich dazu verpflichtet",
+        "Wir haben Ihre ausdrückliche Zustimmung"
+      ]
+    },
+    "dataRetention": {
+      "title": "6. Datenspeicherung",
+      "text": "Wir speichern Ihre personenbezogenen Daten nur so lange, wie es für die Zwecke, für die sie erhoben wurden, erforderlich ist oder um gesetzlichen Anforderungen zu entsprechen."
+    },
+    "yourRights": {
+      "title": "7. Ihre Rechte",
+      "text1": "Gemäß dem Schweizerischen Bundesgesetz über den Datenschutz haben Sie das Recht:",
+      "rights": [
+        "Auf Ihre personenbezogenen Daten zuzugreifen",
+        "Die Berichtigung ungenauer Daten zu verlangen",
+        "Die Löschung Ihrer Daten zu verlangen",
+        "Der Verarbeitung Ihrer Daten zu widersprechen",
+        "Eine Beschwerde bei der zuständigen Aufsichtsbehörde einzureichen"
+      ],
+      "text2": "Um diese Rechte auszuüben, können Sie uns über die im Abschnitt \"Verantwortlicher für die Datenverarbeitung\" angegebenen Kontaktdaten erreichen."
+    },
+    "dataSecurity": {
+      "title": "8. Datensicherheit",
+      "text": "Wir ergreifen angemessene technische und organisatorische Sicherheitsmaßnahmen, um Ihre personenbezogenen Daten vor Verlust, unbefugtem Zugriff, Offenlegung, Änderung oder Zerstörung zu schützen."
+    },
+    "thirdPartyLinks": {
+      "title": "9. Links zu Drittanbieter-Websites",
+      "text": "Unsere Website kann Links zu Websites von Drittanbietern enthalten. Wir sind nicht verantwortlich für die Datenschutzpraktiken oder den Inhalt dieser Websites. Wir empfehlen Ihnen, die Datenschutzerklärungen jeder Website zu lesen, die Sie besuchen."
+    },
+    "changes": {
+      "title": "10. Änderungen der Datenschutzerklärung",
+      "text1": "Wir behalten uns das Recht vor, diese Datenschutzerklärung jederzeit zu ändern. Jede Änderung wird auf dieser Seite veröffentlicht. Wir empfehlen Ihnen, diese Seite regelmäßig zu besuchen, um auf dem Laufenden zu bleiben.",
+      "lastModified": "Zuletzt geändert:"
+    }
   }
 } 

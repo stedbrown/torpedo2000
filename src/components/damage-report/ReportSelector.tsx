@@ -47,6 +47,7 @@ export default function ReportSelector({ messages, locale }: ReportSelectorProps
           <div 
             className="bg-white p-8 rounded-lg shadow-md border border-gray-200 hover:border-red-500 hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col items-center"
             onClick={() => handleSelectType('liability')}
+            data-testid="liability-option"
           >
             <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mb-4">
               <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

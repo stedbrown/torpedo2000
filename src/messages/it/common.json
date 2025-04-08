@@ -1,14 +1,14 @@
 {
   "navigation": {
     "home": "Home",
-    "about": "Chi Siamo",
+    "about": "Chi siamo",
     "services": "Servizi",
     "gallery": "Galleria",
     "contact": "Contatti",
     "findUs": "Dove trovarci",
     "partners": "Partner",
-    "damageReport": "Notifica di danno",
-    "liabilityReport": "Notifica danno RC"
+    "damageReport": "Notifica danni",
+    "liabilityReport": "Notifica danni RC"
   },
   "hero": {
     "title": "Carrozzeria Torpedo 2000 SA",
@@ -67,13 +67,25 @@
     }
   },
   "about": {
-    "title": "Chi Siamo",
-    "text1": "Con 50 anni di esperienza, Carrozzeria Torpedo 2000 SA rappresenta un punto di riferimento per la riparazione e il restauro di veicoli nel Canton Ticino.",
-    "text2": "Siamo un'azienda formatrice socia dell'Unione Svizzera dei Carrozzieri, impegnata nella qualità e nella professionalità in ogni lavoro.",
-    "text3": "Per i nostri clienti, forniamo anche vetture di cortesia durante il periodo di riparazione."
+    "title": "Chi siamo",
+    "text1": "Con 50 anni di esperienza, la Carrozzeria Torpedo 2000 SA rappresenta un punto di riferimento per la riparazione e il restauro di veicoli nel Canton Ticino.",
+    "text2": "Siamo un'azienda formatrice membro dell'Unione Svizzera dei Carrozzieri, impegnata nella qualità e nella professionalità in ogni lavoro.",
+    "text3": "Per i nostri clienti, forniamo anche veicoli di cortesia durante il periodo di riparazione."
+  },
+  "excellence": {
+    "title": "Eccellenza nella formazione",
+    "description": "Siamo orgogliosi di essere un'azienda formatrice ufficialmente riconosciuta e membro attivo dell'Unione Svizzera dei Carrozzieri, impegnata nell'eccellenza professionale e nella formazione delle future generazioni di artigiani.",
+    "carrosserieSuisse": {
+      "title": "Unione Svizzera dei Carrozzieri",
+      "description": "Membro ufficiale dell'associazione che garantisce elevati standard di qualità nel settore della carrozzeria."
+    },
+    "trainingCompany": {
+      "title": "Azienda Formatrice Certificata",
+      "description": "Investiamo nel futuro formando giovani talenti con competenze tecniche all'avanguardia."
+    }
   },
   "cta": {
-    "title": "Richiedi un preventivo gratuito",
+    "title": "Richiedi un preventivo",
     "text": "Contattaci oggi stesso per una consulenza senza impegno",
     "button": "Contattaci"
   },
@@ -199,6 +211,83 @@
     "contacts": "Contatti",
     "quickLinks": "Link Rapidi",
     "servicesTitle": "Servizi",
-    "copyright": "© {year} Carrozzeria Torpedo 2000 SA. Tutti i diritti riservati."
+    "copyright": "© {year} Carrozzeria Torpedo 2000 SA. Tutti i diritti riservati.",
+    "privacyPolicy": "Privacy Policy"
+  },
+  "privacyPolicy": {
+    "title": "Informativa sulla Privacy",
+    "generalInfo": {
+      "title": "1. Informazioni Generali",
+      "text1": "Questa Informativa sulla Privacy descrive come Carrozzeria Torpedo 2000 SA raccoglie e utilizza le informazioni personali fornite dagli utenti durante l'utilizzo del nostro sito web.",
+      "text2": "Le nostre attività sono soggette alla Legge federale svizzera sulla protezione dei dati (LPD). Ci impegniamo a proteggere la privacy degli utenti e a trattare i dati personali in conformità con le leggi applicabili."
+    },
+    "dataController": {
+      "title": "2. Titolare del Trattamento",
+      "text": "Il titolare del trattamento dei dati personali è:",
+      "company": "Carrozzeria Torpedo 2000 SA",
+      "address": "Via Bellinzona 26",
+      "city": "6743 Bodio",
+      "region": "Ticino, Svizzera",
+      "email": "Email: info@torpedo2000.ch",
+      "phone": "Telefono: +41 91 864 22 05"
+    },
+    "dataCollection": {
+      "title": "3. Dati Raccolti e Finalità",
+      "text1": "Il nostro sito web raccoglie solo i dati che ci fornite volontariamente tramite il modulo di contatto o quando ci inviate un'email. Questi dati possono includere:",
+      "dataTypes": [
+        "Nome e cognome",
+        "Indirizzo email",
+        "Numero di telefono",
+        "Altri dettagli che scegliete di fornirci"
+      ],
+      "text2": "Utilizziamo queste informazioni esclusivamente per:",
+      "usageTypes": [
+        "Rispondere alle vostre richieste",
+        "Fornire i servizi richiesti",
+        "Migliorare il nostro sito web e i nostri servizi"
+      ]
+    },
+    "cookies": {
+      "title": "4. Cookie e Tecnologie di Tracciamento",
+      "text": "Il nostro sito web non utilizza cookie o altre tecnologie di tracciamento. Non raccogliamo automaticamente dati sulla navigazione degli utenti."
+    },
+    "dataSharing": {
+      "title": "5. Condivisione dei Dati",
+      "text": "Non vendiamo, affittiamo o condividiamo i vostri dati personali con terze parti, tranne quando:",
+      "exceptions": [
+        "È necessario per fornire un servizio richiesto",
+        "Siamo legalmente obbligati a farlo",
+        "Abbiamo il vostro esplicito consenso"
+      ]
+    },
+    "dataRetention": {
+      "title": "6. Conservazione dei Dati",
+      "text": "Conserviamo i vostri dati personali solo per il tempo necessario a raggiungere le finalità per cui sono stati raccolti o per conformarci ai requisiti legali."
+    },
+    "yourRights": {
+      "title": "7. I Vostri Diritti",
+      "text1": "Ai sensi della Legge federale svizzera sulla protezione dei dati, avete il diritto di:",
+      "rights": [
+        "Accedere ai vostri dati personali",
+        "Richiedere la correzione di dati inaccurati",
+        "Richiedere la cancellazione dei vostri dati",
+        "Opporvi al trattamento dei vostri dati",
+        "Presentare un reclamo all'autorità di controllo competente"
+      ],
+      "text2": "Per esercitare questi diritti, potete contattarci utilizzando i recapiti forniti nella sezione \"Titolare del Trattamento\"."
+    },
+    "dataSecurity": {
+      "title": "8. Sicurezza dei Dati",
+      "text": "Adottiamo misure di sicurezza tecniche e organizzative adeguate per proteggere i vostri dati personali da perdita, accesso non autorizzato, divulgazione, alterazione o distruzione."
+    },
+    "thirdPartyLinks": {
+      "title": "9. Collegamenti a Siti Web di Terze Parti",
+      "text": "Il nostro sito web può contenere collegamenti a siti web di terze parti. Non siamo responsabili delle pratiche sulla privacy o dei contenuti di tali siti. Vi incoraggiamo a leggere le informative sulla privacy di ogni sito che visitate."
+    },
+    "changes": {
+      "title": "10. Modifiche all'Informativa sulla Privacy",
+      "text1": "Ci riserviamo il diritto di modificare questa Informativa sulla Privacy in qualsiasi momento. Tutte le modifiche saranno pubblicate su questa pagina. Vi invitiamo a consultare regolarmente questa pagina per rimanere informati.",
+      "lastModified": "Ultima modifica:"
+    }
   }
 } 

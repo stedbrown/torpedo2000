@@ -45,6 +45,9 @@ export default function Header({ locale = 'it', dictionary }: HeaderProps) {
 
   // Funzione per creare correttamente gli URL basati sulla lingua
   const createLocalizedHref = (path: string = ''): string => {
+    if (path === '' || path === '/') {
+      return locale === 'it' ? '/' : `/${locale}`;
+    }
     const basePath = locale === 'it' ? '' : `/${locale}`;
     return `${basePath}${path}`;
   };
@@ -72,7 +75,7 @@ export default function Header({ locale = 'it', dictionary }: HeaderProps) {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href={createLocalizedHref()} className="flex items-center">
+          <Link href={`/${locale}`} className="flex items-center">
             <div className="relative h-12 w-40">
               <Image 
                 src="/images/torpedo2000Logo.webp"
@@ -87,7 +90,7 @@ export default function Header({ locale = 'it', dictionary }: HeaderProps) {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-6">
-            <Link href={createLocalizedHref()} className="text-gray-800 hover:text-red-600 font-medium">
+            <Link href={`/${locale}`} className="text-gray-800 hover:text-red-600 font-medium">
               {nav.home}
             </Link>
             <Link href={createLocalizedHref('/services')} className="text-gray-800 hover:text-red-600 font-medium">
@@ -160,7 +163,7 @@ export default function Header({ locale = 'it', dictionary }: HeaderProps) {
           <div className="md:hidden py-4 border-t">
             <nav className="flex flex-col space-y-3">
               <Link 
-                href={createLocalizedHref()}
+                href={`/${locale}`}
                 className="text-gray-800 hover:text-red-600 px-2 py-1 font-medium"
                 onClick={() => setMobileMenuOpen(false)}
               >

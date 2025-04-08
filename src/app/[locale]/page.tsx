@@ -25,7 +25,7 @@ export default async function Home({
         <div className="absolute inset-0 z-0">
           <Image 
             src="/images/Torpedo2000HeroHome.webp"
-            alt="Torpedo 2000 Carrozzeria"
+            alt={messages.hero.title}
             fill
             priority
             style={{objectFit: 'cover'}}
@@ -33,14 +33,14 @@ export default async function Home({
           />
         </div>
         {/* Overlay per migliorare la leggibilità del testo */}
-        <div className="absolute inset-0 bg-black/40 z-10"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 z-10"></div>
+        <div className="absolute inset-0 bg-black/15 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/40 z-10"></div>
         
         <div className="container mx-auto px-4 z-20 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">{messages.hero.title}</h1>
           <p className="text-xl md:text-2xl mb-8 drop-shadow-lg">{messages.hero.subtitle}</p>
           <Link 
-            href={`/${locale === 'it' ? '' : locale}/contact`} 
+            href={`/${locale}/contact`} 
             className="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-md"
           >
             {messages.hero.cta}
@@ -97,6 +97,19 @@ export default async function Home({
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1">
+              <div className="flex items-center mb-6">
+                <div className="relative w-48 h-16 mr-4">
+                  <Image 
+                    src="/images/torpedo2000Logo.webp"
+                    alt="Torpedo 2000 Logo"
+                    fill
+                    style={{objectFit: 'contain'}}
+                    className="object-left"
+                  />
+                </div>
+                <div className="w-20 h-1 bg-red-600 flex-grow"></div>
+              </div>
+              
               <h2 className="text-3xl font-bold mb-4 text-gray-900">{messages.about.title}</h2>
               <p className="text-gray-800 mb-4">
                 {messages.about.text1}
@@ -108,14 +121,16 @@ export default async function Home({
                 {messages.about.text3}
               </p>
             </div>
-            <div className="flex-1 flex justify-center">
-              <div className="w-full max-w-md h-64 bg-gray-300 rounded-lg relative shadow-md overflow-hidden">
+            <div className="w-full md:flex-1 mt-8 md:mt-0">
+              <div className="relative w-full h-56 sm:h-64 md:h-72 bg-gray-300 rounded-lg shadow-md overflow-hidden">
                 <Image 
                   src="/images/torpedoImmagine.webp"
-                  alt="Torpedo 2000 Carrozzeria"
+                  alt={messages.about.title}
                   fill
                   style={{objectFit: 'cover'}}
                   quality={90}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  priority
                 />
               </div>
             </div>
@@ -128,10 +143,10 @@ export default async function Home({
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-10">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Eccellenza nella formazione</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">{messages.excellence.title}</h2>
               <div className="w-20 h-1 bg-red-600 mx-auto mb-6"></div>
               <p className="text-xl text-gray-700">
-                Con orgoglio, siamo un'azienda formatrice ufficialmente riconosciuta e membro attivo dell'Unione Svizzera dei Carrozzieri, impegnata nell'eccellenza professionale e nella formazione delle future generazioni di artigiani.
+                {messages.excellence.description}
               </p>
             </div>
             
@@ -140,14 +155,14 @@ export default async function Home({
                 <div className="relative w-48 h-32 mb-4">
                   <Image 
                     src="/images/carrosserieSuisseLogo.webp"
-                    alt="Unione Svizzera dei Carrozzieri"
+                    alt={messages.excellence.carrosserieSuisse.title}
                     fill
                     style={{objectFit: 'contain'}}
                   />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">Unione Svizzera dei Carrozzieri</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">{messages.excellence.carrosserieSuisse.title}</h3>
                 <p className="text-gray-600 text-center text-sm">
-                  Membro ufficiale dell'associazione che garantisce standard qualitativi elevati nel settore della carrozzeria.
+                  {messages.excellence.carrosserieSuisse.description}
                 </p>
               </div>
               
@@ -155,14 +170,14 @@ export default async function Home({
                 <div className="relative w-48 h-32 mb-4">
                   <Image 
                     src="/images/logoApprendisti.webp"
-                    alt="Azienda Formatrice Certificata"
+                    alt={messages.excellence.trainingCompany.title}
                     fill
                     style={{objectFit: 'contain'}}
                   />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">Azienda Formatrice Certificata</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">{messages.excellence.trainingCompany.title}</h3>
                 <p className="text-gray-600 text-center text-sm">
-                  Investiamo nel futuro formando giovani talenti con competenze tecniche all'avanguardia.
+                  {messages.excellence.trainingCompany.description}
                 </p>
               </div>
             </div>
@@ -176,7 +191,7 @@ export default async function Home({
           <h2 className="text-3xl font-bold mb-4 drop-shadow-sm">{messages.cta.title}</h2>
           <p className="text-xl mb-8 drop-shadow-sm">{messages.cta.text}</p>
           <Link 
-            href={`/${locale === 'it' ? '' : locale}/contact`} 
+            href={`/${locale}/contact`} 
             className="inline-block bg-white text-red-600 hover:bg-gray-100 font-bold py-3 px-6 rounded-lg transition duration-300 shadow-md"
           >
             {messages.cta.button}
