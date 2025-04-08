@@ -43,8 +43,12 @@
       "description": "Nous offrons des conseils pour les procédures d'assurance en Suisse et à l'étranger."
     },
     "courtesy": {
-      "title": "Véhicules de Courtoisie",
+      "title": "Véhicules de courtoisie",
       "description": "Nous fournissons des véhicules de courtoisie pendant la période de réparation."
+    },
+    "trucks": {
+      "title": "Véhicules Utilitaires",
+      "description": "Services spécialisés pour camions, fourgons et autres véhicules commerciaux avec équipement dédié."
     },
     "whyChooseUs": {
       "title": "Pourquoi nous choisir",

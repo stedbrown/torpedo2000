@@ -46,6 +46,10 @@
       "title": "Vetture di Cortesia",
       "description": "Forniamo delle vetture di cortesia durante il periodo di riparazione."
     },
+    "trucks": {
+      "title": "Veicoli Pesanti",
+      "description": "Servizi specializzati per camion, furgoni e altri veicoli commerciali con attrezzature dedicate."
+    },
     "whyChooseUs": {
       "title": "Perché Scegliere Noi",
       "experience": {

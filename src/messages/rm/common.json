@@ -43,8 +43,12 @@
       "description": "Nus purschin cussegliaziun per praticas d'assicuranza en Svizra ed a l'exteriur."
     },
     "courtesy": {
-      "title": "Vehichels da cortesia",
-      "description": "Nus furnin vehichels da cortesia durant il temp da reparatura."
+      "title": "Vehichels da curtoisia",
+      "description": "Nus furnin vehichels da curtoisia durant il temp da reparatura."
+    },
+    "trucks": {
+      "title": "Vehichels pesants",
+      "description": "Servetschs spezialisads per camiuns, furguns ed auters vehichels commerzials cun equipament dedità."
     },
     "whyChooseUs": {
       "title": "Pertge tscherner nus",

@@ -1,7 +1,7 @@
 import { getDictionary } from '@/lib/dictionaries';
 import { locales } from '@/middleware';
 import Image from 'next/image';
-import { FaTools, FaCar, FaSprayCan, FaHammer, FaHistory, FaShieldAlt, FaGlasses } from 'react-icons/fa';
+import { FaTools, FaCar, FaSprayCan, FaHammer, FaHistory, FaShieldAlt, FaTruck, FaWindowMaximize } from 'react-icons/fa';
 
 export async function generateStaticParams() {
   return locales.map(locale => ({ locale }));
@@ -57,9 +57,15 @@ export default async function ServicesPage({
     },
     {
       id: 'glass',
-      icon: <FaGlasses className="text-5xl text-red-600 mb-4" />,
+      icon: <FaWindowMaximize className="text-5xl text-red-600 mb-4" />,
       title: messages.services?.glass?.title || "Sostituzione Vetri",
       description: messages.services?.glass?.description || "Sostituiamo parabrezza e vetri di ogni genere per autovetture e veicoli pesanti."
+    },
+    {
+      id: 'trucks',
+      icon: <FaTruck className="text-5xl text-red-600 mb-4" />,
+      title: messages.services?.trucks?.title || "Veicoli Pesanti",
+      description: messages.services?.trucks?.description || "Servizi specializzati per camion, furgoni e altri veicoli commerciali con attrezzature dedicate."
     }
   ];
   

@@ -44,7 +44,11 @@
     },
     "courtesy": {
       "title": "Leihfahrzeuge",
-      "description": "Wir stellen während der Reparaturzeit Leihfahrzeuge zur Verfügung."
+      "description": "Wir stellen Ihnen während der Reparatur ein Leihfahrzeug zur Verfügung."
+    },
+    "trucks": {
+      "title": "Nutzfahrzeuge",
+      "description": "Spezialisierte Dienstleistungen für Lastwagen, Lieferwagen und andere Nutzfahrzeuge mit spezieller Ausrüstung."
     },
     "whyChooseUs": {
       "title": "Warum uns wählen",
