@@ -111,10 +111,11 @@ export default async function Home({
             <div className="flex-1 flex justify-center">
               <div className="w-full max-w-md h-64 bg-gray-300 rounded-lg relative shadow-md overflow-hidden">
                 <Image 
-                  src="/images/about-placeholder.jpg"
+                  src="/images/torpedoImmagine.webp"
                   alt="Torpedo 2000 Carrozzeria"
                   fill
                   style={{objectFit: 'cover'}}
+                  quality={90}
                 />
               </div>
             </div>
