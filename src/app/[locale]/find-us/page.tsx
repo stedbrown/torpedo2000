@@ -21,15 +21,6 @@ export default async function FindUsPage({
     <main className="flex-1 bg-white">
       {/* Hero Banner */}
       <section className="relative pt-16 pb-12 bg-gradient-to-r from-gray-800 to-gray-900 text-white">
-        <div className="absolute inset-0 opacity-20">
-          <Image 
-            src="/images/map-background.jpg" 
-            alt={messages.findUs.title} 
-            fill 
-            style={{objectFit: 'cover'}}
-            priority
-          />
-        </div>
         <div className="container mx-auto px-4 relative">
           <h1 className="text-4xl font-bold text-center text-white mb-2 drop-shadow-md">{messages.findUs.title}</h1>
           <div className="w-20 h-1 bg-red-600 mx-auto mb-8"></div>
