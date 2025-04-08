@@ -72,29 +72,34 @@ export default function Footer({ locale = 'it', dictionary }: FooterProps) {
             <h3 className="text-xl font-bold mb-4 text-white">{footer.quickLinks}</h3>
             <ul className="space-y-2">
               <li>
-                <Link href={`/${locale === 'it' ? '' : locale}`} className="text-gray-200 hover:text-red-400 transition">
+                <a href={locale === 'it' ? "/" : `/${locale}`} className="text-gray-200 hover:text-red-400 transition">
                   {nav.home}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href={`/${locale === 'it' ? '' : locale}/about`} className="text-gray-200 hover:text-red-400 transition">
+                <a href={locale === 'it' ? "/about" : `/${locale}/about`} className="text-gray-200 hover:text-red-400 transition">
                   {nav.about}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href={`/${locale === 'it' ? '' : locale}/services`} className="text-gray-200 hover:text-red-400 transition">
+                <a href={locale === 'it' ? "/services" : `/${locale}/services`} className="text-gray-200 hover:text-red-400 transition">
                   {nav.services}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href={`/${locale === 'it' ? '' : locale}/gallery`} className="text-gray-200 hover:text-red-400 transition">
+                <a href={locale === 'it' ? "/gallery" : `/${locale}/gallery`} className="text-gray-200 hover:text-red-400 transition">
                   {nav.gallery}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href={`/${locale === 'it' ? '' : locale}/contact`} className="text-gray-200 hover:text-red-400 transition">
+                <a href={locale === 'it' ? "/contact" : `/${locale}/contact`} className="text-gray-200 hover:text-red-400 transition">
                   {nav.contact}
-                </Link>
+                </a>
+              </li>
+              <li>
+                <a href={locale === 'it' ? "/find-us" : `/${locale}/find-us`} className="text-gray-200 hover:text-red-400 transition">
+                  {nav.findUs}
+                </a>
               </li>
             </ul>
           </div>
@@ -104,29 +109,29 @@ export default function Footer({ locale = 'it', dictionary }: FooterProps) {
             <h3 className="text-xl font-bold mb-4 text-white">{footer.servicesTitle}</h3>
             <ul className="space-y-2">
               <li>
-                <Link href={`/${locale === 'it' ? '' : locale}/services#repairs`} className="text-gray-200 hover:text-red-400 transition">
+                <a href={locale === 'it' ? "/services" : `/${locale}/services`} className="text-gray-200 hover:text-red-400 transition">
                   {services.repairs.title}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href={`/${locale === 'it' ? '' : locale}/services#hail`} className="text-gray-200 hover:text-red-400 transition">
+                <a href={locale === 'it' ? "/services" : `/${locale}/services`} className="text-gray-200 hover:text-red-400 transition">
                   {services.hail.title}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href={`/${locale === 'it' ? '' : locale}/services#restoration`} className="text-gray-200 hover:text-red-400 transition">
+                <a href={locale === 'it' ? "/services" : `/${locale}/services`} className="text-gray-200 hover:text-red-400 transition">
                   {services.restoration.title}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href={`/${locale === 'it' ? '' : locale}/services#corrosion`} className="text-gray-200 hover:text-red-400 transition">
+                <a href={locale === 'it' ? "/services" : `/${locale}/services`} className="text-gray-200 hover:text-red-400 transition">
                   {services.corrosion.title}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href={`/${locale === 'it' ? '' : locale}/services#glass`} className="text-gray-200 hover:text-red-400 transition">
+                <a href={locale === 'it' ? "/services" : `/${locale}/services`} className="text-gray-200 hover:text-red-400 transition">
                   {services.glass.title}
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -136,9 +141,9 @@ export default function Footer({ locale = 'it', dictionary }: FooterProps) {
         <div className="mt-8 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <p className="text-gray-200">{footer.copyright.replace('{year}', new Date().getFullYear().toString())}</p>
-            <Link href={locale === 'it' ? "/privacy-policy" : `/${locale}/privacy-policy`} className="text-gray-200 hover:text-red-400 transition">
+            <a href={locale === 'it' ? "/privacy-policy" : `/${locale}/privacy-policy`} className="text-gray-200 hover:text-red-400 transition">
               {footer.privacyPolicy || "Privacy Policy"}
-            </Link>
+            </a>
           </div>
           <div className="flex space-x-4">
             <a 
