@@ -77,11 +77,22 @@ export default async function ServicesPage({
           />
         </div>
         <div className="container mx-auto px-4 relative">
-          <h1 className="text-4xl font-bold text-center text-white mb-2 drop-shadow-md">{messages.services?.title || "I Nostri Servizi"}</h1>
-          <div className="w-20 h-1 bg-red-600 mx-auto mb-8"></div>
-          <p className="text-xl text-center max-w-3xl mx-auto">
-            {messages.services?.subtitle || "Offriamo una gamma completa di servizi per la cura, manutenzione e riparazione del tuo veicolo"}
-          </p>
+          <div className="flex flex-col items-center">
+            <div className="relative w-60 h-60 mb-6">
+              <Image 
+                src="/images/logoTorpedo2000Hs.webp" 
+                alt="Torpedo 2000 Logo" 
+                fill
+                style={{objectFit: 'contain'}}
+                className="drop-shadow-lg"
+              />
+            </div>
+            <h1 className="text-4xl font-bold text-center text-white mb-2 drop-shadow-md">{messages.services?.title || "I Nostri Servizi"}</h1>
+            <div className="w-20 h-1 bg-red-600 mx-auto mb-8"></div>
+            <p className="text-xl text-center max-w-3xl mx-auto">
+              {messages.services?.subtitle || "Offriamo una gamma completa di servizi per la cura, manutenzione e riparazione del tuo veicolo"}
+            </p>
+          </div>
         </div>
       </section>
       
