@@ -65,13 +65,13 @@ export default async function ContactPage({
               Torpedo 2000 SA
             </a>
             <a 
-              href="https://www.instagram.com/carrozzeriatorp2000" 
+              href="https://www.instagram.com/torpedo2000sa/" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
             >
               <FaInstagram className="mr-2 text-xl" />
-              @carrozzeriatorp2000
+              @torpedo2000sa
             </a>
           </div>
         </div>

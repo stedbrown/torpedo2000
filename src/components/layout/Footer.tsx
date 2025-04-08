@@ -154,7 +154,7 @@ export default function Footer({ locale = 'it', dictionary }: FooterProps) {
               </svg>
             </a>
             <a 
-              href="https://www.instagram.com/carrozzeriatorp2000" 
+              href="https://www.instagram.com/torpedo2000sa/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-200 hover:text-red-400 transition"

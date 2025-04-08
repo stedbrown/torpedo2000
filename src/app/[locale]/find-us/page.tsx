@@ -162,7 +162,7 @@ export default async function FindUsPage({
                     <span className="font-medium">Facebook</span>
                   </a>
                   <a 
-                    href="https://www.instagram.com/carrozzeriatorp2000" 
+                    href="https://www.instagram.com/torpedo2000sa/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center text-pink-600 hover:text-pink-800 transition-colors"
