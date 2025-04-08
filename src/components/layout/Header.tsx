@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 
@@ -72,7 +73,16 @@ export default function Header({ locale = 'it', dictionary }: HeaderProps) {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href={createLocalizedHref()} className="flex items-center">
-            <span className="text-xl font-bold text-red-600">TORPEDO 2000</span>
+            <div className="relative h-12 w-40">
+              <Image 
+                src="/images/torpedo2000Logo.webp"
+                alt="Torpedo 2000 Logo"
+                fill
+                priority
+                style={{ objectFit: 'contain' }}
+                className="transition-opacity hover:opacity-90"
+              />
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
